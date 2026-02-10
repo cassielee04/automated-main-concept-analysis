@@ -1,0 +1,211 @@
+from pathlib import Path
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import StratifiedGroupKFold
+
+from mainconcept_normalize import MainConceptAnalyzerNormalize
+from coherence import (
+    count_errors_fold_one_participant,
+    calculate_coherence_error_percentages,
+)
+
+CACHE_INDEX = Path("../data/cache_utts_v2/_index.parquet")
+SAVE_DIR = Path("../data/classification/fold_features_traincutoff_designB")
+SAVE_DIR.mkdir(parents=True, exist_ok=True)
+
+N_SPLITS = 5
+SEED = 42
+CUTOFF_K = 1.0
+
+ERROR_TYPES = [
+    "Topic Switching",
+    "Missing Referent",
+    "Tangential Utterance",
+    "Propositional Repetition",
+    "Filler",
+    "Conceptual Incongruence",
+    "Coherent",
+]
+
+def fit_cutoff_mean_plus_kstd(distances: np.ndarray, k: float = 1.0) -> float:
+    distances = distances[np.isfinite(distances)]
+    if len(distances) == 0:
+        raise ValueError("No finite distances to fit cutoff from.")
+    mu = float(distances.mean())
+    sd = float(distances.std(ddof=0))
+    return mu + k * sd
+
+def order_difference_ratio(seq):
+    n = len(seq)
+    if n < 2:
+        return 0.0
+    violations = 0
+    for i in range(n):
+        for j in range(i+1, n):
+            if seq[i] > seq[j]:
+                violations += 1
+    return violations / (n * (n - 1) / 2)
+
+def compute_repeated_flags(best_idx: list[int], is_match: list[bool]) -> list[bool]:
+    seen = set()
+    rep = []
+    for cid, m in zip(best_idx, is_match):
+        if not m:
+            rep.append(False)
+            continue
+        if cid in seen:
+            rep.append(True)
+        else:
+            seen.add(cid)
+            rep.append(False)
+    return rep
+
+def compute_topic_switch_flags(analyzer: MainConceptAnalyzerNormalize, utterances: list[str]) -> list[bool]:
+    flags = [False] * len(utterances)
+    for i in range(1, len(utterances)):
+        flags[i] = bool(analyzer.is_topic_switching(utterances[i-1], utterances[i]))
+    return flags
+
+def build_participant_row(dfp: pd.DataFrame, cutoff: float, analyzer: MainConceptAnalyzerNormalize) -> dict:
+    dfp = dfp.sort_values("utt_idx").reset_index(drop=True)
+    utts = dfp["utterance"].astype(str).tolist()
+    dists = dfp["distance_to_centroid"].astype(float).tolist()
+    best_idx = dfp["best_idx"].astype(int).tolist()
+
+    # fold match based on cutoff
+    is_match = [dist <= cutoff for dist in dists]
+
+    # matched concept only if matched
+    concepts = analyzer.concepts
+    matched_concepts = [concepts[i] if m else None for i, m in zip(best_idx, is_match)]
+
+    # repeated only among matched (mirrors your coherence logic)
+    repeated_flags = compute_repeated_flags(best_idx, is_match)
+
+    # topic switching within participant
+    topic_switch_flags = compute_topic_switch_flags(analyzer, utts)
+
+    # fold coherence counts (same shape as count_errors())
+    counts, _ = count_errors_fold_one_participant(
+        utterances=utts,
+        is_mainconcept_match=is_match,
+        matched_concepts=matched_concepts,
+        is_repeated_flags=repeated_flags,
+        topic_switch_flags=topic_switch_flags,
+    )
+
+    total_utterances = len(utts)
+
+    # participant-level MCA features (match your main.py outputs)
+    num_total_mc = int(sum(is_match))
+    num_unique_mc = int(pd.Series([cid for cid, m in zip(best_idx, is_match) if m]).nunique())
+    seq = [cid for cid, m in zip(best_idx, is_match) if m]
+    seq_score = float(order_difference_ratio(seq))
+
+    # local/global as you do
+    local_pct, global_pct = calculate_coherence_error_percentages(counts, total_utterances)
+
+    row = {
+        "participant": dfp["participant"].iloc[0],
+        "label": dfp["label"].iloc[0],
+        "total_utterances": total_utterances,
+        "distance_to_centroid": float(np.mean(dists)) if total_utterances else np.nan,
+        "num_unique_main_concepts": num_unique_mc,
+        "num_total_main_concepts": num_total_mc,
+        "unique_main_concept_match_ratio": num_unique_mc / 34.0,
+        "total_main_concept_match_ratio": num_total_mc / max(total_utterances, 1),
+        "sequence_score_mainconcept": seq_score,
+        "local_coherence_mainconcept": local_pct,
+        "global_coherence_mainconcept": global_pct,
+    }
+
+    # per error type counts/ratios exactly like your loop
+    for error_type in ERROR_TYPES:
+        num_col = f'num_{error_type.lower().replace(" ", "_")}'
+        ratio_col = f'ratio_{error_type.lower().replace(" ", "_")}_percent'
+        num = counts.get(error_type, 0)
+        ratio = (num / total_utterances * 100.0) if total_utterances > 0 else 0.0
+        row[num_col] = int(num)
+        row[ratio_col] = round(ratio, 2)
+
+    return row
+
+def extract_features_fold(df_cache: pd.DataFrame, pids: set[str], cutoff: float, analyzer: MainConceptAnalyzerNormalize) -> pd.DataFrame:
+    df_split = df_cache[df_cache["participant"].isin(pids)].copy()
+    rows = []
+    for pid, dfp in df_split.groupby("participant", sort=False):
+        rows.append(build_participant_row(dfp, cutoff, analyzer))
+    return pd.DataFrame(rows)
+
+def run_folds_save_features(df_cache: pd.DataFrame):
+    df_part = df_cache[["participant", "label"]].drop_duplicates("participant").reset_index(drop=True)
+    label_map = {name: i for i, name in enumerate(sorted(df_part["label"].unique()))}
+    df_part["y"] = df_part["label"].map(label_map).astype(int)
+
+    sgkf = StratifiedGroupKFold(n_splits=N_SPLITS, shuffle=True, random_state=SEED)
+
+    analyzer = MainConceptAnalyzerNormalize(global_cutoff=0.0)  # reuse model load
+    summary = []
+
+    for fold, (tr, te) in enumerate(sgkf.split(np.zeros(len(df_part)), df_part["y"], df_part["participant"])):
+        train_pids = set(df_part.loc[tr, "participant"])
+        test_pids  = set(df_part.loc[te, "participant"])
+
+        df_train_utts = df_cache[df_cache["participant"].isin(train_pids)]
+        cutoff = fit_cutoff_mean_plus_kstd(df_train_utts["distance_to_centroid"].to_numpy(), k=CUTOFF_K)
+
+        X_train = extract_features_fold(df_cache, train_pids, cutoff, analyzer)
+        X_test  = extract_features_fold(df_cache, test_pids, cutoff, analyzer)
+
+        for out, split in [(X_train, "train"), (X_test, "test")]:
+            out.insert(0, "fold", fold)
+            out.insert(1, "split", split)
+            out.insert(2, "cutoff_from", "train")
+            out.insert(3, "cutoff", cutoff)
+
+        train_path = SAVE_DIR / f"fold{fold:02d}_train_features_traincutoff_k{CUTOFF_K}.csv"
+        test_path  = SAVE_DIR / f"fold{fold:02d}_test_features_traincutoff_k{CUTOFF_K}.csv"
+        X_train.to_csv(train_path, index=False)
+        X_test.to_csv(test_path, index=False)
+
+        print(f"[FOLD {fold}] cutoff(train)={cutoff:.6f}\n  {train_path}\n  {test_path}")
+
+        summary.append({
+            "fold": fold,
+            "cutoff_from": "train",
+            "cutoff": cutoff,
+            "n_train_participants": len(train_pids),
+            "n_test_participants": len(test_pids),
+            "train_rows": len(X_train),
+            "test_rows": len(X_test),
+        })
+
+    summary_df = pd.DataFrame(summary)
+    summary_path = SAVE_DIR / f"fold_summary_traincutoff_k{CUTOFF_K}.csv"
+    summary_df.to_csv(summary_path, index=False)
+    print(f"[DONE] {summary_path}")
+
+def main():
+    if not CACHE_INDEX.exists():
+        raise FileNotFoundError(f"Cache index not found: {CACHE_INDEX}")
+
+    df_cache = pd.read_parquet(CACHE_INDEX)
+
+    needed = ["participant", "label", "utt_idx", "utterance", "distance_to_centroid", "best_idx"]
+    missing = [c for c in needed if c not in df_cache.columns]
+    if missing:
+        raise KeyError(f"CACHE missing columns: {missing}. got={list(df_cache.columns)}")
+
+    df_cache = df_cache.dropna(subset=["distance_to_centroid", "best_idx"]).reset_index(drop=True)
+    df_cache["utt_idx"] = pd.to_numeric(df_cache["utt_idx"], errors="coerce")
+    df_cache["best_idx"] = pd.to_numeric(df_cache["best_idx"], errors="coerce").astype("Int64")
+    df_cache = df_cache.dropna(subset=["utt_idx", "best_idx"]).copy()
+
+    print("[INFO] participants:", df_cache["participant"].nunique())
+    print("[INFO] utterances:", len(df_cache))
+    print("[INFO] labels:", df_cache["label"].value_counts().to_dict())
+
+    run_folds_save_features(df_cache)
+
+if __name__ == "__main__":
+    main()

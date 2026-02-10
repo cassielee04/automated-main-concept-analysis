@@ -1,0 +1,376 @@
+✅ Using GPU: True
+Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json:   0%|          | 0.00/53.6k [00:00<?, ?B/s]Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json: 434kB [00:00, 309MB/s]                     
+2026-02-09 15:55:44 INFO: Downloaded file to /projectnb/skiran/Cassie/resources/resources.json
+2026-02-09 15:55:44 INFO: Downloading default packages for language: en (English) ...
+2026-02-09 15:55:45 INFO: File exists: /projectnb/skiran/Cassie/resources/en/default.zip
+2026-02-09 15:55:48 INFO: Finished downloading models and saved to /projectnb/skiran/Cassie/resources
+2026-02-09 15:55:49 INFO: Loading these models for language: en (English):
+=================================
+| Processor | Package           |
+---------------------------------
+| tokenize  | combined          |
+| mwt       | combined          |
+| pos       | combined_charlm   |
+| lemma     | combined_nocharlm |
+| depparse  | combined_charlm   |
+=================================
+
+2026-02-09 15:55:49 INFO: Using device: cuda
+2026-02-09 15:55:49 INFO: Loading: tokenize
+2026-02-09 15:56:01 INFO: Loading: mwt
+2026-02-09 15:56:01 INFO: Loading: pos
+2026-02-09 15:56:02 INFO: Loading: lemma
+2026-02-09 15:56:03 INFO: Loading: depparse
+2026-02-09 15:56:03 INFO: Done loading processors!
+✅ Using GPU: True
+Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json:   0%|          | 0.00/53.6k [00:00<?, ?B/s]Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json: 434kB [00:00, 31.8MB/s]                    
+2026-02-09 15:56:11 INFO: Downloaded file to /projectnb/skiran/Cassie/resources/resources.json
+2026-02-09 15:56:11 INFO: Downloading default packages for language: en (English) ...
+2026-02-09 15:56:12 INFO: File exists: /projectnb/skiran/Cassie/resources/en/default.zip
+2026-02-09 15:56:15 INFO: Finished downloading models and saved to /projectnb/skiran/Cassie/resources
+2026-02-09 15:56:16 INFO: Loading these models for language: en (English):
+=================================
+| Processor | Package           |
+---------------------------------
+| tokenize  | combined          |
+| mwt       | combined          |
+| pos       | combined_charlm   |
+| lemma     | combined_nocharlm |
+| depparse  | combined_charlm   |
+=================================
+
+2026-02-09 15:56:16 INFO: Using device: cuda
+2026-02-09 15:56:16 INFO: Loading: tokenize
+2026-02-09 15:56:16 INFO: Loading: mwt
+2026-02-09 15:56:16 INFO: Loading: pos
+2026-02-09 15:56:17 INFO: Loading: lemma
+2026-02-09 15:56:17 INFO: Loading: depparse
+2026-02-09 15:56:17 INFO: Done loading processors!
+/projectnb/skiran/Cassie/Code/miniconda3/envs/transcribe/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py:13: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+[CACHE] cohort=dementia files=94 folder=/projectnb/skiran/Cassie/Data/transcripts/bank/dementia/aws/cinderella
+  ✅ cached dementia 01-1 -> dementia__01-1__effc336dec85.parquet
+  ✅ cached dementia 06-1 -> dementia__06-1__4082a44679b8.parquet
+  ✅ cached dementia 09-1 -> dementia__09-1__2fe1029ce21d.parquet
+  ✅ cached dementia 10-1 -> dementia__10-1__781622bbbc1c.parquet
+  ✅ cached dementia 11-1 -> dementia__11-1__2114126b51dc.parquet
+  ✅ cached dementia 14-1 -> dementia__14-1__01bc02473f03.parquet
+  ✅ cached dementia 15-1 -> dementia__15-1__0fb183852b9d.parquet
+  ✅ cached dementia 16-1 -> dementia__16-1__ae31207500c4.parquet
+  ✅ cached dementia 17-1 -> dementia__17-1__51d0bc2ba8ac.parquet
+  ✅ cached dementia 18-1 -> dementia__18-1__25b689e2883c.parquet
+  ✅ cached dementia 19-1 -> dementia__19-1__a8ccfc1f8112.parquet
+  ✅ cached dementia 20-1 -> dementia__20-1__62e1b826e818.parquet
+  ✅ cached dementia 207-1 -> dementia__207-1__d74e0dfd4e3e.parquet
+  ✅ cached dementia 21-1 -> dementia__21-1__7c823b131598.parquet
+  ✅ cached dementia 216-1 -> dementia__216-1__05095928e21b.parquet
+  ✅ cached dementia 22-1 -> dementia__22-1__f6c0b84e44a1.parquet
+  ✅ cached dementia 23-1 -> dementia__23-1__26ce62394aa7.parquet
+  ✅ cached dementia 232-1 -> dementia__232-1__9429e5def546.parquet
+  ✅ cached dementia 26-1 -> dementia__26-1__75c4ac1bf2c1.parquet
+  ✅ cached dementia 27-1 -> dementia__27-1__e3fb7b521348.parquet
+  ✅ cached dementia 277-1 -> dementia__277-1__204b73afee9b.parquet
+  ✅ cached dementia 28-1 -> dementia__28-1__85a8513ca731.parquet
+  ✅ cached dementia 31-1 -> dementia__31-1__d9606516c120.parquet
+  ✅ cached dementia 32-1 -> dementia__32-1__ca013ae1e840.parquet
+  ✅ cached dementia 33-1 -> dementia__33-1__4db57256b29c.parquet
+  ✅ cached dementia 34-1 -> dementia__34-1__b3a3163c1e2f.parquet
+  ✅ cached dementia 40-1 -> dementia__40-1__4ad693c204b7.parquet
+  ✅ cached dementia 43-1 -> dementia__43-1__a614b20a1216.parquet
+  ✅ cached dementia 47-1 -> dementia__47-1__69535db5942c.parquet
+  ✅ cached dementia 49-1 -> dementia__49-1__ad20c5bf195e.parquet
+  ✅ cached dementia 50-1 -> dementia__50-1__707ea8693d29.parquet
+  ✅ cached dementia 52-1 -> dementia__52-1__f1bb2c14a0ab.parquet
+  ✅ cached dementia 53-1 -> dementia__53-1__95022b2269dd.parquet
+  ✅ cached dementia 54-1 -> dementia__54-1__8cc1482cd132.parquet
+  ✅ cached dementia 55-1 -> dementia__55-1__95f221a65716.parquet
+  ✅ cached dementia 57-1 -> dementia__57-1__1f28fc266405.parquet
+  ✅ cached dementia 58-1 -> dementia__58-1__9c75a46b7a55.parquet
+  ✅ cached dementia 59-1 -> dementia__59-1__a41dc05c05f8.parquet
+  ✅ cached dementia 61-1 -> dementia__61-1__ee03c833b9ee.parquet
+  ✅ cached dementia 63-1 -> dementia__63-1__963b3d390477.parquet
+  ✅ cached dementia 64-1 -> dementia__64-1__04610a727d04.parquet
+  ✅ cached dementia 66-1 -> dementia__66-1__1bc77d779b73.parquet
+  ✅ cached dementia 68-1 -> dementia__68-1__485302356bb2.parquet
+  ✅ cached dementia 69-1 -> dementia__69-1__e55f6557df38.parquet
+  ✅ cached dementia 71-1 -> dementia__71-1__cc8e486bdb27.parquet
+  ✅ cached dementia 74-1 -> dementia__74-1__3c2d5e6fdbb3.parquet
+  ✅ cached dementia 75-1 -> dementia__75-1__f172f5169e48.parquet
+  ✅ cached dementia 78-1 -> dementia__78-1__8fb9cdfba8f2.parquet
+  ✅ cached dementia 79-1 -> dementia__79-1__2f24c576e793.parquet
+  ✅ cached dementia 88-1 -> dementia__88-1__16af862b11a8.parquet
+  ✅ cached dementia 91-1 -> dementia__91-1__96216ca70db8.parquet
+  ✅ cached dementia 95-1 -> dementia__95-1__19e01be40a86.parquet
+  ✅ cached dementia AMR6628a -> dementia__AMR6628a__36f0040cefbd.parquet
+  ✅ cached dementia BBW8512a -> dementia__BBW8512a__326a8ce7504d.parquet
+  ✅ cached dementia BDY3628a -> dementia__BDY3628a__cdfb26a7f828.parquet
+  ✅ cached dementia BFI6092a -> dementia__BFI6092a__a8eb13c73b8d.parquet
+  ✅ cached dementia BMN3031b -> dementia__BMN3031b__aedceb76c153.parquet
+  ✅ cached dementia Baycrest10285 -> dementia__Baycrest10285__d139023394dc.parquet
+  ✅ cached dementia Baycrest11634 -> dementia__Baycrest11634__230c2edf4f8c.parquet
+  ✅ cached dementia Baycrest11976 -> dementia__Baycrest11976__aa3cefedaa9a.parquet
+  ✅ cached dementia Baycrest12257 -> dementia__Baycrest12257__cd00da45fb64.parquet
+  ✅ cached dementia Baycrest12756 -> dementia__Baycrest12756__fc3032da612a.parquet
+  ✅ cached dementia Baycrest12813 -> dementia__Baycrest12813__acb2c12f319d.parquet
+  ✅ cached dementia Baycrest12814 -> dementia__Baycrest12814__15bbf029c6e7.parquet
+  ✅ cached dementia Baycrest12828 -> dementia__Baycrest12828__0a37371634c8.parquet
+  ✅ cached dementia Baycrest12829 -> dementia__Baycrest12829__183ee339b840.parquet
+  ✅ cached dementia Baycrest13074 -> dementia__Baycrest13074__b4409b77be4c.parquet
+  ✅ cached dementia Baycrest13188 -> dementia__Baycrest13188__b6f4efce4c3a.parquet
+  ✅ cached dementia Baycrest2103 -> dementia__Baycrest2103__9bec529bebde.parquet
+  ✅ cached dementia Baycrest7352 -> dementia__Baycrest7352__0b2bd16a2eb2.parquet
+  ✅ cached dementia Baycrest8538 -> dementia__Baycrest8538__b4cc95287ed9.parquet
+  ✅ cached dementia CHP4775a -> dementia__CHP4775a__f189c2263d3d.parquet
+  ✅ cached dementia DCR7644a -> dementia__DCR7644a__573be655e474.parquet
+  ✅ cached dementia DRY8487a -> dementia__DRY8487a__bbb1b0a16659.parquet
+  ✅ cached dementia DUE3951a -> dementia__DUE3951a__d10a99c9693b.parquet
+  ✅ cached dementia EMH9057a -> dementia__EMH9057a__bde1d952092b.parquet
+  ✅ cached dementia HWN0674a -> dementia__HWN0674a__62a7c9749a58.parquet
+  ✅ cached dementia JBH5314a -> dementia__JBH5314a__883eee41855b.parquet
+  ✅ cached dementia JKS7696a -> dementia__JKS7696a__68835d142280.parquet
+  ✅ cached dementia JRE5043a -> dementia__JRE5043a__485831f46a44.parquet
+  ✅ cached dementia KCR7045a -> dementia__KCR7045a__85fc21c330a0.parquet
+  ✅ cached dementia LBY4645a -> dementia__LBY4645a__72ee988225a7.parquet
+  ✅ cached dementia LRW4117a -> dementia__LRW4117a__f15e1bd399be.parquet
+  ✅ cached dementia MJE8703a -> dementia__MJE8703a__cc261aece99f.parquet
+  ✅ cached dementia MSH7922a -> dementia__MSH7922a__211f92bce967.parquet
+  ✅ cached dementia MVS4058a -> dementia__MVS4058a__7b92353882a5.parquet
+  ✅ cached dementia NHE3782a -> dementia__NHE3782a__64db8301f4e6.parquet
+  ✅ cached dementia PMR5861a -> dementia__PMR5861a__9a67ac03232b.parquet
+  ✅ cached dementia PON4669b -> dementia__PON4669b__6977b55552eb.parquet
+  ✅ cached dementia RBN7927a -> dementia__RBN7927a__f16b17bd0035.parquet
+  ✅ cached dementia RCL5752 -> dementia__RCL5752__6a75390849bd.parquet
+  ✅ cached dementia RWN7022a -> dementia__RWN7022a__b00b4ef293b6.parquet
+  ✅ cached dementia SKR7851a -> dementia__SKR7851a__5979e69a3640.parquet
+  ✅ cached dementia TBD4254a -> dementia__TBD4254a__87e9739ce129.parquet
+[CACHE] cohort=aphasia files=102 folder=/projectnb/skiran/Cassie/Data/transcripts/bank/aphasia/aws/cinderella
+  ✅ cached aphasia Baycrest10634a -> aphasia__Baycrest10634a__bbb9208049eb.parquet
+  ✅ cached aphasia Baycrest10827a -> aphasia__Baycrest10827a__2226ad87ec09.parquet
+  ✅ cached aphasia Baycrest11154a -> aphasia__Baycrest11154a__018dde288602.parquet
+  ✅ cached aphasia Baycrest12072a -> aphasia__Baycrest12072a__22e6c25c2e8b.parquet
+  ✅ cached aphasia Baycrest12288a -> aphasia__Baycrest12288a__d3ea1bae580c.parquet
+  ✅ cached aphasia Baycrest12308a -> aphasia__Baycrest12308a__853fc781d0ff.parquet
+  ✅ cached aphasia Baycrest12331a -> aphasia__Baycrest12331a__2fb8e8df9c21.parquet
+  ✅ cached aphasia Baycrest9336a -> aphasia__Baycrest9336a__f4edce436d0d.parquet
+  ✅ cached aphasia Baycrest9772a -> aphasia__Baycrest9772a__971db5c789fa.parquet
+  ✅ cached aphasia MMA08a -> aphasia__MMA08a__eaea31f3e855.parquet
+  ✅ cached aphasia MMA11a -> aphasia__MMA11a__66b5714b7891.parquet
+  ✅ cached aphasia MMA12a -> aphasia__MMA12a__b245dab856c6.parquet
+  ✅ cached aphasia MMA13a -> aphasia__MMA13a__e10685b0ef1d.parquet
+  ✅ cached aphasia MMA14a -> aphasia__MMA14a__b08eed8e3cc9.parquet
+  ✅ cached aphasia MMA19a -> aphasia__MMA19a__a86e4670e708.parquet
+  ✅ cached aphasia TAP04a -> aphasia__TAP04a__746c14a01d31.parquet
+  ✅ cached aphasia TAP05a -> aphasia__TAP05a__1dc2ecdb5df5.parquet
+  ✅ cached aphasia TAP11a -> aphasia__TAP11a__c6bfcd0b31c6.parquet
+  ✅ cached aphasia TAP13a -> aphasia__TAP13a__765c85b176af.parquet
+  ✅ cached aphasia UNH01a -> aphasia__UNH01a__1cda379a6880.parquet
+  ✅ cached aphasia UNH03b -> aphasia__UNH03b__138f65bac9e5.parquet
+  ✅ cached aphasia UNH05c -> aphasia__UNH05c__68a26eb9ac22.parquet
+  ✅ cached aphasia UNH08a -> aphasia__UNH08a__43975c20fd43.parquet
+  ✅ cached aphasia UNH10c -> aphasia__UNH10c__3f8bd41ed6de.parquet
+  ✅ cached aphasia UNH11b -> aphasia__UNH11b__e063bf988838.parquet
+  ✅ cached aphasia UNH14a -> aphasia__UNH14a__509494d5d047.parquet
+  ✅ cached aphasia acwt02a -> aphasia__acwt02a__7f62c780d142.parquet
+  ✅ cached aphasia acwt04a -> aphasia__acwt04a__2067ea9d320a.parquet
+  ✅ cached aphasia acwt08a -> aphasia__acwt08a__cbae84d92bf0.parquet
+  ✅ cached aphasia acwt09a -> aphasia__acwt09a__7a0cf227f2e4.parquet
+  ✅ cached aphasia acwt10a -> aphasia__acwt10a__ae05914dccb0.parquet
+  ✅ cached aphasia acwt12a -> aphasia__acwt12a__d6a3c554fdde.parquet
+  ✅ cached aphasia adler02a -> aphasia__adler02a__955145302d60.parquet
+  ✅ cached aphasia adler03a -> aphasia__adler03a__fcab9d48855b.parquet
+  ✅ cached aphasia adler04a -> aphasia__adler04a__2ec22d9de561.parquet
+  ✅ cached aphasia adler05a -> aphasia__adler05a__b5e81fdeb67e.parquet
+  ✅ cached aphasia adler06a -> aphasia__adler06a__6867d74d73e6.parquet
+  ✅ cached aphasia adler15a -> aphasia__adler15a__8a5d9c69146a.parquet
+  ✅ cached aphasia elman01a -> aphasia__elman01a__f331966221d7.parquet
+  ✅ cached aphasia elman05a -> aphasia__elman05a__a14b188920db.parquet
+  ✅ cached aphasia elman07a -> aphasia__elman07a__aeb0cd8cbcaf.parquet
+  ✅ cached aphasia elman10a -> aphasia__elman10a__d978b768d5b1.parquet
+  ✅ cached aphasia elman14a -> aphasia__elman14a__b82d227a2a08.parquet
+  ✅ cached aphasia elman15a -> aphasia__elman15a__9536a5f148b9.parquet
+  ✅ cached aphasia fridriksson01a -> aphasia__fridriksson01a__945246719962.parquet
+  ✅ cached aphasia fridriksson02a -> aphasia__fridriksson02a__da5c5f538b03.parquet
+  ✅ cached aphasia fridriksson04a -> aphasia__fridriksson04a__d60fbe12e8bf.parquet
+  ✅ cached aphasia fridriksson05a -> aphasia__fridriksson05a__51ffcbfc7629.parquet
+  ✅ cached aphasia fridriksson07a -> aphasia__fridriksson07a__0d311de4cbb7.parquet
+  ✅ cached aphasia fridriksson09a -> aphasia__fridriksson09a__ed8be1700e39.parquet
+  ✅ cached aphasia fridriksson10a -> aphasia__fridriksson10a__8fb56b72972c.parquet
+  ✅ cached aphasia fridriksson11a -> aphasia__fridriksson11a__7b83e3bf16d9.parquet
+  ✅ cached aphasia fridriksson12a -> aphasia__fridriksson12a__8c9f675a263a.parquet
+  ✅ cached aphasia fridriksson13a -> aphasia__fridriksson13a__7191114de9e9.parquet
+  ✅ cached aphasia richardson08a -> aphasia__richardson08a__2b2c90909518.parquet
+  ✅ cached aphasia richardson09a -> aphasia__richardson09a__3862e9ed0eef.parquet
+  ✅ cached aphasia richardson11a -> aphasia__richardson11a__0a6010440fe2.parquet
+  ✅ cached aphasia richardson14a -> aphasia__richardson14a__7c52957ab791.parquet
+  ✅ cached aphasia richardson15a -> aphasia__richardson15a__a6b44693049d.parquet
+  ✅ cached aphasia richardson16a -> aphasia__richardson16a__6e5c8ad59fa2.parquet
+  ✅ cached aphasia richardson17a -> aphasia__richardson17a__edea67667599.parquet
+  ✅ cached aphasia richardson20a -> aphasia__richardson20a__56e2647aae74.parquet
+  ✅ cached aphasia richardson21a -> aphasia__richardson21a__3a9c7d75646b.parquet
+  ✅ cached aphasia richardson26a -> aphasia__richardson26a__541f7708ddfe.parquet
+  ✅ cached aphasia richardson27a -> aphasia__richardson27a__b1d26139b7fe.parquet
+  ✅ cached aphasia richardson28a -> aphasia__richardson28a__49048b0585fa.parquet
+  ✅ cached aphasia richardson30a -> aphasia__richardson30a__ca3a23cfc07a.parquet
+  ✅ cached aphasia richardson31a -> aphasia__richardson31a__7cfae8a2657e.parquet
+  ✅ cached aphasia scale22a -> aphasia__scale22a__9620189dc8e6.parquet
+  ✅ cached aphasia scale32a -> aphasia__scale32a__c85bc9d33f77.parquet
+  ✅ cached aphasia whiteside01a -> aphasia__whiteside01a__d0cc66f1955d.parquet
+  ✅ cached aphasia whiteside02a -> aphasia__whiteside02a__425054968bf1.parquet
+  ✅ cached aphasia whiteside04a -> aphasia__whiteside04a__e2486734f0cc.parquet
+  ✅ cached aphasia whiteside05a -> aphasia__whiteside05a__fd4a6a2fa9ae.parquet
+  ✅ cached aphasia whiteside06a -> aphasia__whiteside06a__c377ce4be294.parquet
+  ✅ cached aphasia whiteside07a -> aphasia__whiteside07a__45a0daa69fd4.parquet
+  ✅ cached aphasia whiteside09a -> aphasia__whiteside09a__6c41bf341257.parquet
+  ✅ cached aphasia whiteside10a -> aphasia__whiteside10a__d8b3c5bb052f.parquet
+  ✅ cached aphasia whiteside11a -> aphasia__whiteside11a__4437ccc67f9f.parquet
+  ✅ cached aphasia whiteside12a -> aphasia__whiteside12a__ccb86c8af44e.parquet
+  ✅ cached aphasia whiteside13a -> aphasia__whiteside13a__66a693d58efe.parquet
+  ✅ cached aphasia whiteside14a -> aphasia__whiteside14a__3888dad7e452.parquet
+  ✅ cached aphasia whiteside15a -> aphasia__whiteside15a__c8d97168559f.parquet
+  ✅ cached aphasia whiteside16a -> aphasia__whiteside16a__d3bf8b3bcd7b.parquet
+  ✅ cached aphasia whiteside17a -> aphasia__whiteside17a__0f86df687d73.parquet
+  ✅ cached aphasia whiteside18a -> aphasia__whiteside18a__d1bfccf453ae.parquet
+  ✅ cached aphasia whiteside19a -> aphasia__whiteside19a__8cadaefe0fa1.parquet
+  ✅ cached aphasia whiteside20a -> aphasia__whiteside20a__5b681c1910ca.parquet
+  ✅ cached aphasia williamson05a -> aphasia__williamson05a__779700ce3031.parquet
+  ✅ cached aphasia williamson06a -> aphasia__williamson06a__9b83e06e1bdb.parquet
+  ✅ cached aphasia williamson07a -> aphasia__williamson07a__8f4e2f3020fe.parquet
+  ✅ cached aphasia williamson09a -> aphasia__williamson09a__3fd16efee8e6.parquet
+  ✅ cached aphasia williamson10a -> aphasia__williamson10a__9ac548543396.parquet
+  ✅ cached aphasia williamson11a -> aphasia__williamson11a__a574b310b70c.parquet
+  ✅ cached aphasia williamson13a -> aphasia__williamson13a__aaec35aa6625.parquet
+  ✅ cached aphasia wozniak01a -> aphasia__wozniak01a__8018e8ad526f.parquet
+  ✅ cached aphasia wozniak02a -> aphasia__wozniak02a__f4ad106b8b6a.parquet
+  ✅ cached aphasia wozniak04a -> aphasia__wozniak04a__464ea0c6c65e.parquet
+  ✅ cached aphasia wozniak06a -> aphasia__wozniak06a__9481346b5281.parquet
+  ✅ cached aphasia wright201a -> aphasia__wright201a__41f6d1a20e3f.parquet
+  ✅ cached aphasia wright202a -> aphasia__wright202a__f6b088474367.parquet
+  ✅ cached aphasia wright203a -> aphasia__wright203a__79a5ecf9448e.parquet
+[CACHE] cohort=controls files=113 folder=/projectnb/skiran/Cassie/Data/transcripts/bank/controls/aws/cinderella
+  ✅ cached controls capilouto01a -> controls__capilouto01a__0731529fde6d.parquet
+  ✅ cached controls capilouto02a -> controls__capilouto02a__34f881b0e50c.parquet
+  ✅ cached controls capilouto03a -> controls__capilouto03a__b6e65d0494cd.parquet
+  ✅ cached controls capilouto04a -> controls__capilouto04a__4f0004dedf14.parquet
+  ✅ cached controls capilouto06a -> controls__capilouto06a__2a020cbec234.parquet
+  ✅ cached controls capilouto07a -> controls__capilouto07a__c5605b7debc1.parquet
+  ✅ cached controls capilouto08a -> controls__capilouto08a__32f130b2504c.parquet
+  ✅ cached controls capilouto09a -> controls__capilouto09a__9ca06bd94755.parquet
+  ✅ cached controls capilouto10a -> controls__capilouto10a__cb26023b378c.parquet
+  ✅ cached controls capilouto11a -> controls__capilouto11a__217a313adf88.parquet
+  ✅ cached controls capilouto12a -> controls__capilouto12a__f6f315d2869f.parquet
+  ✅ cached controls capilouto13a -> controls__capilouto13a__69cd70ca2e89.parquet
+  ✅ cached controls delaware02-1 -> controls__delaware02-1__dd17ce3fed27.parquet
+  ✅ cached controls delaware03-1 -> controls__delaware03-1__c9a372277681.parquet
+  ✅ cached controls delaware04-1 -> controls__delaware04-1__f3de3bf76e42.parquet
+  ✅ cached controls delaware05-1 -> controls__delaware05-1__ff855db5a70f.parquet
+  ✅ cached controls delaware07-1 -> controls__delaware07-1__3735106b2daa.parquet
+  ✅ cached controls delaware08-1 -> controls__delaware08-1__05c38ba353c0.parquet
+  ✅ cached controls delaware101-1 -> controls__delaware101-1__13f5a1f3ef68.parquet
+  ✅ cached controls delaware12-1 -> controls__delaware12-1__e9a2510e0ba0.parquet
+  ✅ cached controls delaware13-1 -> controls__delaware13-1__663ff3308225.parquet
+  ✅ cached controls delaware200-1 -> controls__delaware200-1__1e04fc71f0ac.parquet
+  ✅ cached controls delaware201-1 -> controls__delaware201-1__e4e6144d1cd5.parquet
+  ✅ cached controls delaware203-1 -> controls__delaware203-1__d70b58aaa17d.parquet
+  ✅ cached controls delaware204-1 -> controls__delaware204-1__ebbe4d4948f0.parquet
+  ✅ cached controls delaware208-1 -> controls__delaware208-1__b83b86c8381b.parquet
+  ✅ cached controls delaware209-1 -> controls__delaware209-1__fe42c42fc344.parquet
+  ✅ cached controls delaware214-1 -> controls__delaware214-1__9440a114cf43.parquet
+  ✅ cached controls delaware218-1 -> controls__delaware218-1__ab52f3017a83.parquet
+  ✅ cached controls delaware220-1 -> controls__delaware220-1__41c93a3fc5b6.parquet
+  ✅ cached controls delaware221-1 -> controls__delaware221-1__fb2b332629c4.parquet
+  ✅ cached controls delaware224-1 -> controls__delaware224-1__5f4b63fb87a8.parquet
+  ✅ cached controls delaware225-1 -> controls__delaware225-1__b061bf0b5fdf.parquet
+  ✅ cached controls delaware226-1 -> controls__delaware226-1__37ddc6170dee.parquet
+  ✅ cached controls delaware227-1 -> controls__delaware227-1__bd14be3f6a4b.parquet
+  ✅ cached controls delaware228-1 -> controls__delaware228-1__105c1ad50b72.parquet
+  ✅ cached controls delaware229-1 -> controls__delaware229-1__ff19b27cefa7.parquet
+  ✅ cached controls delaware233-1 -> controls__delaware233-1__132482e3bd7c.parquet
+  ✅ cached controls delaware234-1 -> controls__delaware234-1__aa64795c97f1.parquet
+  ✅ cached controls delaware235-1 -> controls__delaware235-1__5a845463c25f.parquet
+  ✅ cached controls delaware24-1 -> controls__delaware24-1__034384c3e5c7.parquet
+  ✅ cached controls delaware244-1 -> controls__delaware244-1__3b8b768a9106.parquet
+  ✅ cached controls delaware25-1 -> controls__delaware25-1__d53592c422ff.parquet
+  ✅ cached controls delaware270-1 -> controls__delaware270-1__7c28b77bf0b1.parquet
+  ✅ cached controls delaware271-1 -> controls__delaware271-1__ce3be21746e2.parquet
+  ✅ cached controls delaware276-1 -> controls__delaware276-1__8776700dad45.parquet
+  ✅ cached controls delaware278-1 -> controls__delaware278-1__4ce7063f8243.parquet
+  ✅ cached controls delaware279-1 -> controls__delaware279-1__d31548528b35.parquet
+  ✅ cached controls delaware29-1 -> controls__delaware29-1__6c1b1af93eec.parquet
+  ✅ cached controls delaware30-1 -> controls__delaware30-1__e49949e8571a.parquet
+  ✅ cached controls delaware35-1 -> controls__delaware35-1__e7e7a5506eb3.parquet
+  ✅ cached controls delaware36-1 -> controls__delaware36-1__5535500a7d4b.parquet
+  ✅ cached controls delaware37-1 -> controls__delaware37-1__5da00ddec50e.parquet
+  ✅ cached controls delaware38-1 -> controls__delaware38-1__e2095e9f418d.parquet
+  ✅ cached controls delaware39-1 -> controls__delaware39-1__0a30c73f000a.parquet
+  ✅ cached controls delaware42-1 -> controls__delaware42-1__b2590ec18cee.parquet
+  ✅ cached controls delaware44-1 -> controls__delaware44-1__4134451be526.parquet
+  ✅ cached controls delaware45-1 -> controls__delaware45-1__eaedf8fc05a2.parquet
+  ✅ cached controls delaware46-1 -> controls__delaware46-1__69336e133b4f.parquet
+  ✅ cached controls delaware48-1 -> controls__delaware48-1__a045a5779a5d.parquet
+  ✅ cached controls delaware60-1 -> controls__delaware60-1__add2c540d1eb.parquet
+  ✅ cached controls delaware62-1 -> controls__delaware62-1__83a6e1ae6dc7.parquet
+  ✅ cached controls delaware65-1 -> controls__delaware65-1__e9babaffb7dd.parquet
+  ✅ cached controls delaware67-1 -> controls__delaware67-1__0cd2f50a0e96.parquet
+  ✅ cached controls delaware70-1 -> controls__delaware70-1__54fd5f160ca2.parquet
+  ✅ cached controls delaware77-1 -> controls__delaware77-1__a8f7b4f60fef.parquet
+  ✅ cached controls delaware81-1 -> controls__delaware81-1__bfd56dd2f18b.parquet
+  ✅ cached controls delaware84-1 -> controls__delaware84-1__d8ff9ae74bb5.parquet
+  ✅ cached controls delaware86-1 -> controls__delaware86-1__9149cc1cb8ae.parquet
+  ✅ cached controls delaware87-1 -> controls__delaware87-1__d0a36d554610.parquet
+  ✅ cached controls delaware90-1 -> controls__delaware90-1__daba51a50beb.parquet
+  ✅ cached controls delaware92-1 -> controls__delaware92-1__5aef5247c1fa.parquet
+  ✅ cached controls delaware93-1 -> controls__delaware93-1__cb94c74401ec.parquet
+  ✅ cached controls delaware94-1 -> controls__delaware94-1__87b6424bb912.parquet
+  ✅ cached controls delaware96-1 -> controls__delaware96-1__db7c8fdadf43.parquet
+  ✅ cached controls delaware97-1 -> controls__delaware97-1__d4c92926d39c.parquet
+  ✅ cached controls delaware98-1 -> controls__delaware98-1__ec16867d1b79.parquet
+  ✅ cached controls delaware99-1 -> controls__delaware99-1__ee04dd649e68.parquet
+  ✅ cached controls neural11-1 -> controls__neural11-1__db65f5a2881a.parquet
+  ✅ cached controls neural12-1 -> controls__neural12-1__b11da22859c1.parquet
+  ✅ cached controls neural14-1 -> controls__neural14-1__348e5907d7f0.parquet
+  ✅ cached controls neural15-1 -> controls__neural15-1__6105200dba88.parquet
+  ✅ cached controls neural17-1 -> controls__neural17-1__cf1ba30c76fe.parquet
+  ✅ cached controls neural18-1 -> controls__neural18-1__5fa7601768ca.parquet
+  ✅ cached controls neural19-1 -> controls__neural19-1__a1cf04658b1d.parquet
+  ✅ cached controls neural2-1 -> controls__neural2-1__44e750ab2bd4.parquet
+  ✅ cached controls neural20-1 -> controls__neural20-1__5b89af77729d.parquet
+  ✅ cached controls neural24-1 -> controls__neural24-1__c2df28447cf3.parquet
+  ✅ cached controls neural26-1 -> controls__neural26-1__47690d44d06f.parquet
+  ✅ cached controls neural27-1 -> controls__neural27-1__99c813afd4ff.parquet
+  ✅ cached controls neural28-1 -> controls__neural28-1__d4f539d038d6.parquet
+  ✅ cached controls neural29-1 -> controls__neural29-1__d2ecb5b34c4c.parquet
+  ✅ cached controls neural38-1 -> controls__neural38-1__c26452e87824.parquet
+  ✅ cached controls neural39-1 -> controls__neural39-1__898decc6b39d.parquet
+  ✅ cached controls neural4-1 -> controls__neural4-1__5ed5b7ec288e.parquet
+  ✅ cached controls neural40-1 -> controls__neural40-1__c9405b28c5ee.parquet
+  ✅ cached controls neural43-1 -> controls__neural43-1__0471ec3af470.parquet
+  ✅ cached controls neural5-1 -> controls__neural5-1__ecc498d375f7.parquet
+  ✅ cached controls neural6-1 -> controls__neural6-1__6d8181c9c08c.parquet
+  ✅ cached controls neural62-1 -> controls__neural62-1__01749815d237.parquet
+  ✅ cached controls neural7-1 -> controls__neural7-1__0730bf8c55c7.parquet
+  ✅ cached controls neural8-1 -> controls__neural8-1__5a9e6d5e95de.parquet
+  ✅ cached controls wright01a -> controls__wright01a__4dcdeb256c09.parquet
+  ✅ cached controls wright02a -> controls__wright02a__6fea265af2f1.parquet
+  ✅ cached controls wright03a -> controls__wright03a__7e8dc16ac837.parquet
+  ✅ cached controls wright04a -> controls__wright04a__4feba44b17e7.parquet
+  ✅ cached controls wright05a -> controls__wright05a__465048ff3ad6.parquet
+  ✅ cached controls wright06a -> controls__wright06a__c79eef80aca1.parquet
+  ✅ cached controls wright07a -> controls__wright07a__33ed3f8fe353.parquet
+  ✅ cached controls wright08a -> controls__wright08a__70628b599aa2.parquet
+  ✅ cached controls wright09a -> controls__wright09a__0560d67b6db5.parquet
+  ✅ cached controls wright10a -> controls__wright10a__6adb405a5701.parquet
+  ✅ cached controls wright11a -> controls__wright11a__2d29229e1315.parquet
+[CACHE] wrote combined cache index: ../data/cache_utts_v2/_index.parquet rows=14441
+
+[INFO] Cached participants: 309
+[INFO] Cached utterances: 14441
+[INFO] Labels: {'controls': 7118, 'aphasia': 3794, 'dementia': 3529}
+[INFO] Columns: ['cohort', 'label', 'participant', 'utt_idx', 'utterance', 'normalized_utt', 'distance_to_centroid', 'best_idx', 'error_type']
+
+[INFO] Head:
+  cohort    label participant  utt_idx                                                                             utterance                                                                normalized_utt  distance_to_centroid  best_idx                                                                                                                                                error_type
+dementia dementia        01-1        0 OK, well, there was this family and once upon a time, of course, it was this family,. OK, there was this family and once upon a time, of course, it was this family                0.6092        11 [01-1, OK, well, there was this family and once upon a time, of course, it was this family,., Missing Referent, Stepmother/stepsisters went to the ball.]
+dementia dementia        01-1        1           and then in the family, there was a, so it was a case of a second marriage.   and then in the family, there was a, so it was a case of a second marriage.                0.5965         0          [01-1, and then in the family, there was a, so it was a case of a second marriage., Missing Referent, Dad remarried a woman with two daughters.]
+dementia dementia        01-1        2                  and mama brought her to, pain and their daughters to the household,.          and mama brought her to, pain and their daughters to the household,.                0.5367         2           [01-1, and mama brought her to, pain and their daughters to the household,., Missing Referent, Stepmother/stepsisters were mean to Cinderella.]
+dementia dementia        01-1        3                                                        and then there was Cinderella.                                                          there was Cinderella                0.2435        12                                                                                   [01-1, and then there was Cinderella., Coherent, Cinderella was upset.]
+dementia dementia        01-1        4                                                         Ella lived in the household,.                                                 Ella lived in the household,.                0.5741         1                                                        [01-1, Ella lived in the household,., Coherent, Cinderella lives with her stepmother/stepsisters.]

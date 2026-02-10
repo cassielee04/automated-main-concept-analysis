@@ -1,0 +1,69 @@
+✅ Using GPU: True
+Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json:   0%|          | 0.00/53.6k [00:00<?, ?B/s]Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json: 434kB [00:00, 241MB/s]                     
+2026-02-10 11:21:03 INFO: Downloaded file to /projectnb/skiran/Cassie/resources/resources.json
+2026-02-10 11:21:03 INFO: Downloading default packages for language: en (English) ...
+2026-02-10 11:21:05 INFO: File exists: /projectnb/skiran/Cassie/resources/en/default.zip
+2026-02-10 11:21:08 INFO: Finished downloading models and saved to /projectnb/skiran/Cassie/resources
+2026-02-10 11:21:09 INFO: Loading these models for language: en (English):
+=================================
+| Processor | Package           |
+---------------------------------
+| tokenize  | combined          |
+| mwt       | combined          |
+| pos       | combined_charlm   |
+| lemma     | combined_nocharlm |
+| depparse  | combined_charlm   |
+=================================
+
+2026-02-10 11:21:09 INFO: Using device: cuda
+2026-02-10 11:21:09 INFO: Loading: tokenize
+2026-02-10 11:21:18 INFO: Loading: mwt
+2026-02-10 11:21:18 INFO: Loading: pos
+2026-02-10 11:21:20 INFO: Loading: lemma
+2026-02-10 11:21:21 INFO: Loading: depparse
+2026-02-10 11:21:22 INFO: Done loading processors!
+✅ Using GPU: True
+Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json:   0%|          | 0.00/53.6k [00:00<?, ?B/s]Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json: 434kB [00:00, 33.0MB/s]                    
+2026-02-10 11:21:22 INFO: Downloaded file to /projectnb/skiran/Cassie/resources/resources.json
+2026-02-10 11:21:22 INFO: Downloading default packages for language: en (English) ...
+2026-02-10 11:21:23 INFO: File exists: /projectnb/skiran/Cassie/resources/en/default.zip
+2026-02-10 11:21:26 INFO: Finished downloading models and saved to /projectnb/skiran/Cassie/resources
+2026-02-10 11:21:27 INFO: Loading these models for language: en (English):
+=================================
+| Processor | Package           |
+---------------------------------
+| tokenize  | combined          |
+| mwt       | combined          |
+| pos       | combined_charlm   |
+| lemma     | combined_nocharlm |
+| depparse  | combined_charlm   |
+=================================
+
+2026-02-10 11:21:27 INFO: Using device: cuda
+2026-02-10 11:21:27 INFO: Loading: tokenize
+2026-02-10 11:21:27 INFO: Loading: mwt
+2026-02-10 11:21:27 INFO: Loading: pos
+2026-02-10 11:21:29 INFO: Loading: lemma
+2026-02-10 11:21:29 INFO: Loading: depparse
+2026-02-10 11:21:30 INFO: Done loading processors!
+/projectnb/skiran/Cassie/Code/miniconda3/envs/transcribe/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py:13: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+[INFO] participants: 309
+[INFO] utterances: 14441
+[INFO] labels: {'controls': 7118, 'aphasia': 3794, 'dementia': 3529}
+[FOLD 0] cutoff(train)=0.818731
+  ../data/classification/fold_features_traincutoff_designB/fold00_train_features_traincutoff_k1.0.csv
+  ../data/classification/fold_features_traincutoff_designB/fold00_test_features_traincutoff_k1.0.csv
+[FOLD 1] cutoff(train)=0.819840
+  ../data/classification/fold_features_traincutoff_designB/fold01_train_features_traincutoff_k1.0.csv
+  ../data/classification/fold_features_traincutoff_designB/fold01_test_features_traincutoff_k1.0.csv
+[FOLD 2] cutoff(train)=0.819452
+  ../data/classification/fold_features_traincutoff_designB/fold02_train_features_traincutoff_k1.0.csv
+  ../data/classification/fold_features_traincutoff_designB/fold02_test_features_traincutoff_k1.0.csv
+[FOLD 3] cutoff(train)=0.822559
+  ../data/classification/fold_features_traincutoff_designB/fold03_train_features_traincutoff_k1.0.csv
+  ../data/classification/fold_features_traincutoff_designB/fold03_test_features_traincutoff_k1.0.csv
+[FOLD 4] cutoff(train)=0.825252
+  ../data/classification/fold_features_traincutoff_designB/fold04_train_features_traincutoff_k1.0.csv
+  ../data/classification/fold_features_traincutoff_designB/fold04_test_features_traincutoff_k1.0.csv
+[DONE] ../data/classification/fold_features_traincutoff_designB/fold_summary_traincutoff_k1.0.csv
