@@ -1,0 +1,441 @@
+stories:
+  - name: "Cinderella"
+    concepts:     
+      - "Dad remarried a woman with two daughters."
+      - "Cinderella lives with her stepmother/stepsisters."
+      - "Stepmother/stepsisters were mean to Cinderella."
+      - "Cinderella was a servant to the stepmother and stepsisters."
+      - "Cinderella has to do housework."
+      - "The king thinks the prince should get married."
+      - "King announces there is going to be a ball in honor of son who needs to find a wife."
+      - "They got an invitation to the ball."
+      - "They are excited about the ball."
+      - "Cinderella is told by the stepmother she cannot go to the ball unless/because."
+      - "Stepsisters tore Cinderella’s dress."
+      - "Stepmother/stepsisters went to the ball."
+      - "Cinderella was upset."
+      - "A fairy godmother appeared to Cinderella."
+      - "The fairy godmother makes pumpkin and mice turn into carriage/coach and horses."
+      - "The fairy godmother makes Cinderella into a beautiful princess."
+      - "Cinderella went to the ball in the coach."
+      - "She knew she had to be home by midnight because everything will turn back at midnight."
+      - "The prince and Cinderella danced around the room/all night/with no one else."
+      - "Prince falls in love with Cinderella."
+      - "Cinderella realized it is midnight."
+      - "She ran down the stairs."
+      - "As she was running down the stairs she lost one of the glass slippers."
+      - "Prince finds Cinderella’s shoe."
+      - "Everything turns back to its original form."
+      - "She returned home in time."
+      - "The prince searched door to door for Cinderella."
+      - "Prince comes to Cinderella's house."
+      - "The stepsisters try on the glass slipper."
+      - "The slipper didn’t fit the stepsisters."
+      - "He put the slipper on Cinderella’s foot."
+      - "The slipper fits Cinderella perfectly."
+      - "Cinderella and the prince were married."
+      - "Cinderella and the prince lived happily ever after."
+    
+    core_lexicon:
+      - "a"
+      - "after"
+      - "all"
+      - "and"
+      - "as"
+      - "at"
+      - "away"
+      - "back"
+      - "ball"
+      - "be"
+      - "beautiful"
+      - "because"
+      - "but"
+      - "by"
+      - "cinderella"
+      - "clock"
+      - "come"
+      - "could"
+      - "dance"
+      - "after"
+      - "all"
+      - "and"
+      - "as"
+      - "at"
+      - "away"
+      - "back"
+      - "ball"
+      - "be"
+      - "beautiful"
+      - "because"
+      - "but"
+      - "by"
+      - "cinderella"
+      - "clock"
+      - "come"
+      - "could"
+      - "dance"
+      - "daughter"
+      - "do"
+      - "dress"
+      - "ever"
+      - "fairy"
+      - "father"
+      - "find"
+      - "fit"
+      - "foot"
+      - "for"
+      - "get"
+      - "girl"
+      - "glass"
+      - "go"
+      - "godmother"
+      - "happy"
+      - "have"
+      - "he"
+      - "home"
+      - "horse" 
+      - "house"
+      - "i"
+      - "in"
+      - "into"
+      - "it"
+      - "know"
+      - "leave"
+      - "like"
+      - "little"
+      - "live"
+      - "look"
+      - "lose"
+      - "make"
+      - "marry"
+      - "midnight"
+      - "mother"
+      - "mouse"
+      - "not"
+      - "of"
+      - "off"
+      - "on"
+      - "one"
+      - "out"
+      - "prince"
+      - "pumpkin"
+      - "run"
+      - "'s"
+      - "say"
+      - "she"
+      - "shoe"
+      - "sister"
+      - "slipper"
+      - "so"
+      - "strike"
+      - "take"
+      - "tell"
+      - "that"
+      - "the"
+      - "then"
+      - "there"
+      - "they"
+      - "this"
+      - "time"
+      - "to"
+      - "try"
+      - "turn"
+      - "two"
+      - "up"
+      - "very"
+      - "want"
+      - "well"
+      - "when"
+      - "who"
+      - "will"
+      - "with"
+    ciu:
+      - 'who'
+      - 'stepmother'
+      - 'put' 
+      - 'one'
+      - 'stepsister'
+      - 'prince'
+      - 'an'
+      - 'marry'
+      - 'live' 
+      - 's'
+      - 'of'
+      - 'in'
+      - 'love'
+      - 'to' 
+      - 'two' 
+      - 'fall'
+      - 'appear' 
+      - 'make'
+      - 'original'
+      - 'back'
+      - 'happily'
+      - 'should'
+      - 'upset'
+      - 'turn'
+      - 'coach'
+      - 'beautiful'
+      - 'have'
+      - 'excite'
+      - 'fit'
+      - 'dad'
+      - 'dance'
+      - "cinderella's"
+      - 'he'
+      - 'after'
+      - 'come' 
+      - 'woman' 
+      - 'into' 
+      - 'mouse' 
+      - 'realize' 
+      - 'foot' 
+      - 'around' 
+      - 'unless'
+      - 'cindrella' 
+      - 'dress' 
+      - 'night' 
+      - 'the' 
+      - 'at' 
+      - 'perfectly' 
+      - 'else'
+      - 'on'
+      - 'know' 
+      - 'midnight' 
+      - 'carriage' 
+      - 'a'
+      - 'fairy'
+      - 'wife' 
+      - 'not' 
+      - 'be' 
+      - 'housework'
+      - 'announce' 
+      - 'they' 
+      - 'need' 
+      - 'slipper' 
+      - 'by'
+      - 'everything' 
+      - 'return' 
+      - 'there' 
+      - 'cannot' 
+      - 'think' 
+      - 'cinderella'
+      - 'all' 
+      - 'her' 
+      - 'mean' 
+      - 'and' 
+      - 'door' 
+      - 'find' 
+      - 'room' 
+      - 'she' 
+      - 'with' 
+      - 'no'
+      - 'pumpkin'
+      - 'tear' 
+      - 'horse' 
+      - 'will' 
+      - 'glass' 
+      - 'go'
+      - 'princess' 
+      - 'daughter'
+      - 'run' 
+      - 'down' 
+      - 'time' 
+      - 'house' 
+      - 'honor' 
+      - 'try'
+      - 'about'
+      - 'godmother'
+      - 'son' 
+      - 'search' 
+      - 'for' 
+      - 'tell' 
+      - 'ever' 
+      - 'get' 
+      - 'it'
+      - 'home' 
+      - 'king'
+      - 'servant' 
+      - 'because'
+      - 'invitation'
+      - 'lose' 
+      - 'shoe' 
+      - 'form' 
+      - 'stair' 
+      - 'ball' 
+      - 'do' 
+      - 'remarry' 
+    filtered_ciu: #no stopwords.
+      - "cinderella"
+      - "woman"
+      - "princess"
+      - "need"
+      - "mouse"
+      - "midnight"
+      - "horse"
+      - "turn"
+      - "dress"
+      - "glass"
+      - "invitation"
+      - "tell"
+      - "servant"
+      - "prince"
+      - "slipper"
+      - "shoe"
+      - "home"
+      - "foot"
+      - "pumpkin"
+      - "housework"
+      - "ever"
+      - "son"
+      - "unless"
+      - "stepmother"
+      - "around"
+      - "beautiful"
+      - "try"
+      - "make"
+      - "fairy"
+      - "appear"
+      - "cinderella's"
+      - "realize"
+      - "remarry"
+      - "daughter"
+      - "live"
+      - "perfectly"
+      - "honor"
+      - "one"
+      - "door"
+      - "house"
+      - "two"
+      - "ball"
+      - "wife"
+      - "carriage"
+      - "go"
+      - "announce"
+      - "stepsister"
+      - "everything"
+      - "cindrella"
+      - "run"
+      - "stair"
+      - "mean"
+      - "room"
+      - "time"
+      - "marry"
+      - "fit"
+      - "else"
+      - "tear"
+      - "original"
+      - "godmother"
+      - "cannot"
+      - "lose"
+      - "night"
+      - "fall"
+      - "put"
+      - "get"
+      - "upset"
+      - "back"
+      - "form"
+      - "find"
+      - "love"
+      - "excite"
+      - "think"
+      - "dance"
+      - "coach"
+      - "king"
+      - "come"
+      - "happily"
+      - "know"
+      - "return"
+      - "search"
+      - "dad"
+
+    ciu_nouns:
+      - "shoe"
+      - "cindrella"
+      - "wife"
+      - "dress"
+      - "coach"
+      - "house"
+      - "midnight"
+      - "glass"
+      - "prince"
+      - "stair"
+      - "fall"
+      - "pumpkin"
+      - "mouse"
+      - "fit"
+      - "ball"
+      - "door"
+      - "dad"
+      - "servant"
+      - "housework"
+      - "honor"
+      - "cinderella"
+      - "night"
+      - "time"
+      - "invitation"
+      - "fairy"
+      - "horse"
+      - "stepmother"
+      - "turn"
+      - "godmother"
+      - "princess"
+      - "carriage"
+      - "room"
+      - "king"
+      - "home"
+      - "cinderella"
+      - "stepsister"
+      - "form"
+      - "run"
+      - "daughter"
+      - "woman"
+      - "son"
+      - "slipper"
+      - "foot"
+    filtered_core_lexicon: #no stopwords
+      - "away"
+      - "ball"
+      - "beautiful"
+      - "cinderella"
+      - "clock"
+      - "come"
+      - "dance"
+      - "daughter"
+      - "dress"
+      - "fairy"
+      - "father"
+      - "find"
+      - "fit"
+      - "foot"
+      - "girl"
+      - "glass"
+      - "godmother"
+      - "happy"
+      - "home"
+      - "horse"
+      - "house"
+      - "know"
+      - "leave"
+      - "like"
+      - "little"
+      - "live"
+      - "look"
+      - "lose"
+      - "marry"
+      - "midnight"
+      - "mother"
+      - "mouse"
+      - "prince"
+      - "pumpkin"
+      - "run"
+      - "shoe"
+      - "sister"
+      - "slipper"
+      - "strike"
+      - "tell"
+      - "time"
+      - "try"
+      - "turn"
+      - "want"
+

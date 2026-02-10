@@ -1,0 +1,310 @@
+Corpus,participant,age,sex,diagnosis,WAB score,standardized MOCA,gen_diagnosis
+Delaware,02-1,62,F,Control,NA,30.0,Control
+Delaware,03-1,63,F,Control,NA,29.0,Control
+Delaware,04-1,72,F,Control,NA,28.0,Control
+Delaware,05-1,79,M,Control,NA,25.0,Control
+Delaware,07-1,81,F,Control,NA,27.0,Control
+Delaware,08-1,68,M,Control,NA,26.0,Control
+Delaware,101-1,60,F,Control,NA,26.0,Control
+Delaware,12-1,82,F,Control,NA,27.0,Control
+Delaware,13-1,76,F,Control,NA,29.0,Control
+Delaware,200-1,74,M,Control,NA,28.64,Control
+Delaware,201-1,64,F,Control,NA,28.64,Control
+Delaware,203-1,82,M,Control,NA,27.27,Control
+Delaware,204-1,72,F,Control,NA,30.0,Control
+Delaware,208-1,83,F,Control,NA,27.27,Control
+Delaware,209-1,64,F,Control,NA,30.0,Control
+Delaware,214-1,85,M,Control,NA,25.91,Control
+Delaware,218-1,73,F,Control,NA,30.0,Control
+Delaware,220-1,73,F,Control,NA,28.64,Control
+Delaware,221-1,70,M,Control,NA,30.0,Control
+Delaware,224-1,78,F,Control,NA,28.64,Control
+Delaware,225-1,67,F,Control,NA,27.27,Control
+Delaware,226-1,71,F,Control,NA,30.0,Control
+Delaware,227-1,69,F,Control,NA,30.0,Control
+Delaware,228-1,69,F,Control,NA,25.91,Control
+Delaware,229-1,73,M,Control,NA,25.91,Control
+Delaware,233-1,82,F,Control,NA,25.91,Control
+Delaware,234-1,64,F,Control,NA,27.27,Control
+Delaware,235-1,74,F,Control,NA,28.64,Control
+Delaware,24-1,66,F,Control,NA,27.0,Control
+Delaware,244-1,75,M,Control,NA,28.64,Control
+Delaware,25-1,70,M,Control,NA,28.0,Control
+Delaware,270-1,77,M,Control,NA,27.27,Control
+Delaware,271-1,77,F,Control,NA,28.64,Control
+Delaware,276-1,72,F,Control,NA,24.55,Control
+Delaware,278-1,66,F,Control,NA,23.18,Control
+Delaware,279-1,77,F,Control,NA,30.0,Control
+Delaware,29-1,66,F,Control,NA,30.0,Control
+Delaware,30-1,68,F,Control,NA,29.0,Control
+Delaware,35-1,63,F,Control,NA,27.0,Control
+Delaware,36-1,68,F,Control,NA,26.0,Control
+Delaware,37-1,66,M,Control,NA,26.0,Control
+Delaware,38-1,66,F,Control,NA,29.0,Control
+Delaware,39-1,65,F,Control,NA,28.0,Control
+Delaware,42-1,67,F,Control,NA,29.0,Control
+Delaware,44-1,72,M,Control,NA,26.0,Control
+Delaware,45-1,78,M,Control,NA,21.0,Control
+Delaware,46-1,88,M,Control,NA,25.0,Control
+Delaware,48-1,70,F,Control,NA,26.0,Control
+Delaware,60-1,73,F,Control,NA,25.0,Control
+Delaware,62-1,66,F,Control,NA,27.0,Control
+Delaware,65-1,65,F,Control,NA,28.0,Control
+Delaware,67-1,62,F,Control,NA,24.0,Control
+Delaware,70-1,62,F,Control,NA,28.0,Control
+Delaware,77-1,75,F,Control,NA,28.0,Control
+Delaware,81-1,62,F,Control,NA,30.0,Control
+Delaware,84-1,71,F,Control,NA,27.0,Control
+Delaware,86-1,62,F,Control,NA,27.0,Control
+Delaware,87-1,71,F,Control,NA,27.0,Control
+Delaware,90-1,64,F,Control,NA,30.0,Control
+Delaware,92-1,70,F,Control,NA,27.0,Control
+Delaware,93-1,74,F,Control,NA,27.0,Control
+Delaware,94-1,68,F,Control,NA,29.0,Control
+Delaware,96-1,61,F,Control,NA,29.0,Control
+Delaware,97-1,84,F,Control,NA,27.0,Control
+Delaware,98-1,63,F,Control,NA,26.0,Control
+Delaware,99-1,73,F,Control,NA,30.0,Control
+NEURAL,11-1,55,F,Control,NA,NA,Control
+NEURAL,12-1,56,F,Control,NA,NA,Control
+NEURAL,14-1,69,M,Control,NA,NA,Control
+NEURAL,15-1,62,M,Control,NA,NA,Control
+NEURAL,17-1,57,F,Control,NA,NA,Control
+NEURAL,18-1,45,F,Control,NA,NA,Control
+NEURAL,19-1,56,F,Control,NA,NA,Control
+NEURAL,2-1,51,F,Control,NA,NA,Control
+NEURAL,20-1,77,F,Control,NA,NA,Control
+NEURAL,24-1,56,F,Control,NA,NA,Control
+NEURAL,26-1,48,F,Control,NA,NA,Control
+NEURAL,27-1,56,F,Control,NA,NA,Control
+NEURAL,28-1,53,F,Control,NA,NA,Control
+NEURAL,29-1,55,M,Control,NA,NA,Control
+NEURAL,38-1,65,M,Control,NA,NA,Control
+NEURAL,39-1,58,M,Control,NA,NA,Control
+NEURAL,4-1,71,M,Control,NA,NA,Control
+NEURAL,40-1,57,F,Control,NA,NA,Control
+NEURAL,43-1,56,F,Control,NA,NA,Control
+NEURAL,5-1,56,F,Control,NA,NA,Control
+NEURAL,6-1,71,F,Control,NA,NA,Control
+NEURAL,62-1,70,F,Control,NA,NA,Control
+NEURAL,7-1,45,M,Control,NA,NA,Control
+NEURAL,8-1,45,F,Control,NA,NA,Control
+Capilouto,capilouto01a,80,F,Control,NA,NA,Control
+Capilouto,capilouto02a,85,M,Control,NA,NA,Control
+Capilouto,capilouto03a,75,F,Control,NA,NA,Control
+Capilouto,capilouto04a,80,F,Control,NA,NA,Control
+Capilouto,capilouto06a,82,F,Control,NA,NA,Control
+Capilouto,capilouto07a,72,F,Control,NA,NA,Control
+Capilouto,capilouto08a,74,M,Control,NA,NA,Control
+Capilouto,capilouto09a,82,M,Control,NA,NA,Control
+Capilouto,capilouto10a,72,M,Control,NA,NA,Control
+Capilouto,capilouto11a,53,M,Control,NA,NA,Control
+Capilouto,capilouto12a,54,F,Control,NA,NA,Control
+Capilouto,capilouto13a,71,F,Control,NA,NA,Control
+Wright,wright01a,61,F,Control,NA,NA,Control
+Wright,wright02a,73,F,Control,NA,NA,Control
+Wright,wright03a,76,F,Control,NA,NA,Control
+Wright,wright04a,74,F,Control,NA,NA,Control
+Wright,wright05a,78,F,Control,NA,NA,Control
+Wright,wright06a,65,F,Control,NA,NA,Control
+Wright,wright07a,51,F,Control,NA,NA,Control
+Wright,wright08a,51,F,Control,NA,NA,Control
+Wright,wright09a,45,M,Control,NA,NA,Control
+Wright,wright10a,45,F,Control,NA,NA,Control
+Wright,wright11a,33,F,Control,NA,NA,Control
+Delaware,01-1,84.0,F,MCI,NA,25.0,Dementia
+Delaware,06-1,81.0,F,MCI,NA,21.82,Dementia
+Delaware,09-1,73.0,M,MCI,NA,28.0,Dementia
+Delaware,10-1,78.0,F,MCI,NA,21.0,Dementia
+Delaware,11-1,83.0,M,MCI,NA,22.0,Dementia
+Delaware,14-1,77.0,F,MCI,NA,26.0,Dementia
+Delaware,15-1,75.0,M,MCI,NA,24.0,Dementia
+Delaware,16-1,85.0,F,MCI,NA,22.0,Dementia
+Delaware,17-1,65.0,F,MCI,NA,27.0,Dementia
+Delaware,18-1,79.0,M,MCI,NA,21.0,Dementia
+Delaware,19-1,73.0,M,MCI,NA,26.0,Dementia
+Delaware,20-1,83.0,M,MCI,NA,23.0,Dementia
+Delaware,207-1,82.0,M,MCI,NA,21.82,Dementia
+Delaware,21-1,74.0,M,MCI,NA,24.0,Dementia
+Delaware,216-1,64.0,F,MCI,NA,24.55,Dementia
+Delaware,22-1 ,76.0,M,MCI,NA,22.0,Dementia
+Delaware,23-1,88.0,F,MCI,NA,24.0,Dementia
+Delaware,232-1,72.0,F,MCI,NA,24.55,Dementia
+Delaware,26-1,62.0,M,MCI,NA,22.0,Dementia
+Delaware,27-1 ,74.0,F,MCI,NA,22.0,Dementia
+Delaware,277-1,69.0,F,MCI,NA,24.55,Dementia
+Delaware,28-1,62.0,M,MCI,NA,26.0,Dementia
+Delaware,31-1,67.0,M,MCI,NA,22.0,Dementia
+Delaware,32-1,67.0,F,MCI,NA,25.0,Dementia
+Delaware,33-1,68.0,F,MCI,NA,27.0,Dementia
+Delaware,34-1,62.0,M,MCI,NA,24.0,Dementia
+Delaware,40-1,79.0,F,MCI,NA,22.0,Dementia
+Delaware,43-1,67.0,F,MCI,NA,28.0,Dementia
+Delaware,47-1,87.0,M,MCI,NA,24.0,Dementia
+Delaware,49-1,69.0,F,MCI,NA,26.0,Dementia
+Delaware,50-1,79.0,M,MCI,NA,20.0,Dementia
+Delaware,52-1,61.0,F,MCI,NA,24.0,Dementia
+Delaware,53-1,61.0,M,MCI,NA,24.0,Dementia
+Delaware,54-1,91.0,F,MCI,NA,23.0,Dementia
+Delaware,55-1,65.0,F,MCI,NA,28.0,Dementia
+Delaware,57-1,74.0,F,MCI,NA,23.0,Dementia
+Delaware,58-1,76.0,M,MCI,NA,25.0,Dementia
+Delaware,59-1,75.0,F,MCI,NA,27.0,Dementia
+Delaware,61-1,73.0,F,MCI,NA,26.0,Dementia
+Delaware,63-1,69.0,F,MCI,NA,23.0,Dementia
+Delaware,64-1,66.0,F,MCI,NA,19.0,Dementia
+Delaware,66-1,72.0,F,MCI,NA,20.0,Dementia
+Delaware,68-1,67.0,M,MCI,NA,28.0,Dementia
+Delaware,69-1,71.0,M,MCI,NA,23.0,Dementia
+Delaware,71-1,73.0,F,MCI,NA,23.0,Dementia
+Delaware,74-1,68.0,F,MCI,NA,24.0,Dementia
+Delaware,75-1,74.0,M,MCI,NA,26.0,Dementia
+Delaware,78-1,61.0,F,MCI,NA,30.0,Dementia
+Delaware,79-1,66.0,F,MCI,NA,19.0,Dementia
+Delaware,88-1,75.0,M,MCI,NA,23.0,Dementia
+Delaware,91-1,68.0,M,MCI,NA,27.0,Dementia
+Delaware,95-1,67.0,F,MCI,NA,25.0,Dementia
+Baycrest-PPA,Baycrest10285,73.0,M,PPA,NA,25.0,Dementia
+Baycrest,Baycrest11634,75.0,F,MCI,NA,23.0,Dementia
+Baycrest,Baycrest11976,88.0,M,MCI,NA,21.0,Dementia
+Baycrest,Baycrest12257,74.0,F,MCI,NA,18.0,Dementia
+Baycrest-PPA,Baycrest12756,60.0,M,PPA,NA,14.0,Dementia
+Baycrest,Baycrest12813,66.0,M,MCI,NA,24.0,Dementia
+Baycrest,Baycrest12814,78.0,F,AD,NA,14.0,Dementia
+Baycrest-PPA,Baycrest12828,75.0,F,PPA,NA,22.0,Dementia
+Baycrest-PPA,Baycrest12829,71.0,M,PPA,NA,21.0,Dementia
+Baycrest-PPA,Baycrest13074,63.0,F,PPA,NA,26.0,Dementia
+Baycrest-PPA,Baycrest13188,70.0,M,PPA,NA,23.0,Dementia
+Baycrest,Baycrest2103,90.0,F,AD,NA,14.0,Dementia
+Baycrest,Baycrest7352,71.0,F,MCI,NA,26.0,Dementia
+Baycrest,Baycrest8538,58.0,M,AD,NA,19.0,Dementia
+Hopkins,AMR6628a,78.0,F,PPA,NA,NA,Dementia
+Hopkins,BBW8512a,68.0,M,PPA,NA,NA,Dementia
+Hopkins,BDY3628a,69.0,F,PPA,NA,NA,Dementia
+Hopkins,BFI6092a,76.0,F,PPA,NA,NA,Dementia
+Hopkins,BMN3031b,NA,F,PPA,NA,NA,Dementia
+Hopkins,CHP4775a,77.0,F,PPA,NA,NA,Dementia
+Hopkins,DCR7644a,71.0,F,PPA,NA,NA,Dementia
+Hopkins,DRY8487a,64.0,F,PPA,NA,NA,Dementia
+Hopkins,DUE3951a,70.0,F,PPA,NA,NA,Dementia
+Hopkins,EMH9057a,72.0,F,PPA,NA,NA,Dementia
+Hopkins,HWN0674a,87.0,M,PPA,NA,NA,Dementia
+Hopkins,JBH5314a,73.0,F,PPA,NA,NA,Dementia
+Hopkins,JKS7696a,74.0,M,PPA,NA,NA,Dementia
+Hopkins,JRE5043a,70.0,M,PPA,NA,NA,Dementia
+Hopkins,KCR7045a,80.0,F,PPA,NA,NA,Dementia
+Hopkins,LBY4645a,67.0,F,PPA,NA,NA,Dementia
+Hopkins,LRW4117a,72.0,F,PPA,NA,NA,Dementia
+Hopkins ,MJE8703a,NA,M,PPA,NA,NA,Dementia
+Hopkins ,MSH7922a,64.0,M,PPA,NA,NA,Dementia
+Hopkins ,MVS4058a,NA,F,PPA,NA,NA,Dementia
+Hopkins ,NHE3782a,79.0,F,PPA,NA,NA,Dementia
+Hopkins,PMR5861a,67.0,F,PPA,NA,NA,Dementia
+Hopkins,PON4669b,58.0,M,PPA,NA,NA,Dementia
+Hopkins,RBN7927a,75.0,M,PPA,NA,NA,Dementia
+Hopkins,RCL5752,NA,M,PPA,NA,NA,Dementia
+Hopkins,RWN7022a,NA,M,PPA,NA,NA,Dementia
+Hopkins,SKR7851a,NA,M,PPA,NA,NA,Dementia
+Hopkins,TBD4254a,NA,M,PPA,NA,NA,Dementia
+ACWT,ACWT02a,53,F,Transcortical motor,74.6,NA,Aphasia
+ACWT,ACWT04a,26,F,NotAphasicbyWAB,96.0,NA,Aphasia
+ACWT,ACWT08a,39,F,Broca's,40.5,NA,Aphasia
+ACWT,ACWT09a,56,F,Conduction,80.1,NA,Aphasia
+ACWT,ACWT10a,48,M,Wernicke's ,57.4,NA,Aphasia
+ACWT,ACWT12a,83,F,Conduction,79.5,NA,Aphasia
+Adler,adler02a,69,M,Conduction,74.9,NA,Aphasia
+Adler,adler03a,78,F,NotAphasicbyWAB,95.8,NA,Aphasia
+Adler,adler04a,75,F,Transcortical motor,72.6,NA,Aphasia
+Adler,adler05a,68,F,Conduction,65.5,NA,Aphasia
+Adler,adler06a,70,M,Wernicke's ,28.2,NA,Aphasia
+Adler,adler15a,78,M,Conduction,72.3,NA,Aphasia
+Baycrest ,baycrest12288a,59,F,Aphasia,59.9,NA,Aphasia
+Baycrest ,baycrest12308a,69,M,Aphasia,75.0,NA,Aphasia
+Baycrest ,baycrest12331a,68,F,Aphasia,90.8,NA,Aphasia
+Baycrest ,baycrest9336a,48,M,Aphasia,78.3,NA,Aphasia
+Baycrest ,baycrest9772a,70,M,Aphasia,96.7,NA,Aphasia
+Baycrest ,baycrest10634a,75,M,Aphasia,80.0,NA,Aphasia
+Baycrest ,baycrest10827a,79,M,Aphasia,95.8,NA,Aphasia
+Baycrest ,baycrest11154a,73,M,Aphasia,98.3,NA,Aphasia
+Baycrest ,baycrest12072a,46,M,Aphasia,52.3,NA,Aphasia
+Elman,elman01a,55,M,Conduction,76.3,NA,Aphasia
+Elman,elman05a,48,M,Anomic,85.7,NA,Aphasia
+Elman,elman07a,65,M,Anomic,63.4,NA,Aphasia
+Elman,elman10a,59,F,Anomic,93.2,NA,Aphasia
+Elman,elman14a,76,F,Wernicke's ,65.7,NA,Aphasia
+Elman,elman15a,68,F,Anomic,86.9,NA,Aphasia
+Fridriksson,fridriksson01a,55,F,Anomic,85.6,NA,Aphasia
+Fridriksson,fridriksson02a,61,M,Anomic,87.9,NA,Aphasia
+Fridriksson,fridriksson04a,75,M,Anomic,84.2,NA,Aphasia
+Fridriksson,fridriksson05a,58,F,Anomic,92.7,NA,Aphasia
+Fridriksson,fridriksson07a,77,F,NotAphasicbyWAB,97.9,NA,Aphasia
+Fridriksson ,fridriksson09a,63,M,Anomic,90.2,NA,Aphasia
+Fridriksson,fridriksson10a,64,M,Broca's,61.2,NA,Aphasia
+Fridriksson,fridriksson11a,35,F,NotAphasicbyWAB,99.6,NA,Aphasia
+Fridriksson,fridriksson12a,47,F,Broca's,57.5,NA,Aphasia
+Fridriksson,fridriksson13a,55,M,Conduction,72.6,NA,Aphasia
+MMA,mma08a,56,F,Broca's,49.5,NA,Aphasia
+MMA,mma11a,70,M,Anomic,91.4,NA,Aphasia
+MMA,mma12a,54,F,Anomic,89.6,NA,Aphasia
+MMA,mma13a,42,F,Conduction,62.9,NA,Aphasia
+MMA,mma14a,53,M,Broca's,49.4,NA,Aphasia
+MMA,mma19a,49,F,Conduction,82.0,NA,Aphasia
+Richardson ,richardson08a,48,M,Anomic,92.6,NA,Aphasia
+Richardson ,richardson09a,74,F,Conduction,61.0,NA,Aphasia
+Richardson ,richardson11a,59,F,Anomic,86.8,NA,Aphasia
+Richardson ,richardson14a,75,M,Broca's,68.8,NA,Aphasia
+Richardson ,richardson15a,56,M,Anomic,91.5,NA,Aphasia
+Richardson ,richardson16a,53,M,Anomic,86.2,NA,Aphasia
+Richardson ,richardson17a,52,M,Broca's,52.6,NA,Aphasia
+Richardson ,richardson20a,33,F,NotAphasicbyWAB,95.5,NA,Aphasia
+Richardson ,richardson21a,51,F,NotAphasicbyWAB,96.5,NA,Aphasia
+Richardson ,richardson26a,58,M,Anomic,84.6,NA,Aphasia
+Richardson ,richardson27a,41,M,Conduction,73.9,NA,Aphasia
+Richardson ,richardson28a,77,M,NotAphasicbyWAB,94.0,NA,Aphasia
+Richardson ,richardson30a,77,M,Wernicke's ,36.8,NA,Aphasia
+Richardson ,richardson31a,49,M,NotAphasicbyWAB,95.0,NA,Aphasia
+SCALE,scale22a,73,M,Anomic,90.4,NA,Aphasia
+SCALE,scale32a,69,M,Anomic,82.8,NA,Aphasia
+TAP,tap04a,71,F,Anomic,91.2,NA,Aphasia
+TAP,tap05a,41,F,Anomic,79.4,NA,Aphasia
+TAP,tap11a,62,F,Broca's,58.1,NA,Aphasia
+TAP,tap13a,49,F,Broca's,44.4,NA,Aphasia
+UNH,UNH01a,52,F,NotAphasicbyWAB,95.7,NA,Aphasia
+UNH,UNH03b,78,M,Anomic,88.4,NA,Aphasia
+UNH,UNH05c,73,M,Anomic,90.4,NA,Aphasia
+UNH,UNH08a,63,M,Conduction,61.3,NA,Aphasia
+UNH,UNH10c,56,F,Broca's,61.2,NA,Aphasia
+UNH,UNH11b,65,F,NotAphasicbyWAB,94.3,NA,Aphasia
+UNH,UNH14a,59,F,Conduction,85.3,NA,Aphasia
+Whiteside,whiteside01a,71,M,Anomic,84.0,NA,Aphasia
+Whiteside,whiteside02a,74,F,Conduction,60.7,NA,Aphasia
+Whiteside,whiteside04a,65,M,Broca's,50.0,NA,Aphasia
+Whiteside,whiteside05a,30,F,Conduction,82.1,NA,Aphasia
+Whiteside,whiteside06a,62,M,Anomic,88.8,NA,Aphasia
+Whiteside,whiteside07a,52,M,Anomic,90.8,NA,Aphasia
+Whiteside,whiteside09a,53,M,Anomic,78.7,NA,Aphasia
+Whiteside,whiteside10a,66,M,Wernicke's,53.0,NA,Aphasia
+Whiteside,whiteside11a,30,F,Broca's,72.8,NA,Aphasia
+Whiteside,whiteside12a,69,F,Broca's,54.3,NA,Aphasia
+Whiteside,whiteside13a,49,F,Anomic,91.9,NA,Aphasia
+Whiteside,whiteside14a,40,F,Wernicke's,71.8,NA,Aphasia
+Whiteside,whiteside15a,53,F,Broca's,72.2,NA,Aphasia
+Whiteside,whiteside16a,46,F,Broca's,53.4,NA,Aphasia
+Whiteside,whiteside17a,63,M,NotAphasicbyWAB,95.1,NA,Aphasia
+Whiteside,whiteside18a,47,F,NotAphasicbyWAB,98.9,NA,Aphasia
+Whiteside,whiteside19a,50,M,Anomic,87.4,NA,Aphasia
+Whiteside,whiteside20a,55,F,Conduction,88.4,NA,Aphasia
+Williamson,williamson05a,74,M,NotAphasicbyWAB,94.8,NA,Aphasia
+Williamson,williamson06a,88,F,Conduction,61.1,NA,Aphasia
+Williamson,williamson07a,64,M,Anomic,92.2,NA,Aphasia
+Williamson,williamson09a,61,F,Conduction,90.0,NA,Aphasia
+Williamson,williamson10a,71,M,NotAphasicbyWAB,95.2,NA,Aphasia
+Williamson,williamson11a,64,F,Conduction,69.0,NA,Aphasia
+Williamson,williamson13a,69,M,NotAphasicbyWAB,99.0,NA,Aphasia
+Wozniak,wozniak06a,57,F,NotAphasicbyWAB,95.01,NA,Aphasia
+Wozniak,wozniak04a,79,M,Anomic,84.5,NA,Aphasia
+Wozniak,wozniak02a,Unavailable,F,Conduction,78.8,NA,Aphasia
+Wozniak,wozniak01a,54,F,Anomic,93.4,NA,Aphasia
+Wright,wright201a,55,M,Broca's,57.6,NA,Aphasia
+Wright,wright202a,63,F,Anomic,89.5,NA,Aphasia
+Wright,wright203a,66,M,Conduction,76.3,NA,Aphasia

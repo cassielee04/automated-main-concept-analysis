@@ -1,0 +1,4 @@
+,pred_controls,pred_aphasia,pred_dementia
+true_controls,15,2,6
+true_aphasia,0,13,9
+true_dementia,5,3,9
