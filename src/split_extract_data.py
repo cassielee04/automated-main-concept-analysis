@@ -2,7 +2,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import StratifiedGroupKFold
-
+from sentence_transformers import util
+import torch
 from mainconcept_normalize import MainConceptAnalyzerNormalize
 from coherence import (
     count_errors_fold_one_participant,
@@ -13,9 +14,12 @@ CACHE_INDEX = Path("../data/cache_utts_v2/_index.parquet")
 SAVE_DIR = Path("../data/classification/fold_features_traincutoff_designB")
 SAVE_DIR.mkdir(parents=True, exist_ok=True)
 
+PARQUET_PATH = Path("../data/cache_utts_v2/dementia__06-1__4082a44679b8.parquet")
+
 N_SPLITS = 5
 SEED = 42
 CUTOFF_K = 1.0
+SIM_THR = 0.8
 
 ERROR_TYPES = [
     "Topic Switching",
@@ -46,21 +50,59 @@ def order_difference_ratio(seq):
                 violations += 1
     return violations / (n * (n - 1) / 2)
 
-def compute_repeated_flags(best_idx: list[int], is_match: list[bool]) -> list[bool]:
-    seen = set()
-    rep = []
-    for cid, m in zip(best_idx, is_match):
+def compute_repeated_flags(
+    analyzer: MainConceptAnalyzerNormalize,
+    normalized_utts: list[str],
+    is_match: list[bool],
+    sim_thr: float = 0.8,
+) -> list[bool]:
+    """
+    IDENTICAL to old MainConceptAnalyzerNormalize.is_repeated_utt behavior,
+    when called inside `if is_match:`.
+
+    Old behavior:
+      - only check repetition for matched utterances
+      - repeated if max cosine sim to ANY previous stored utterance > sim_thr
+      - if repeated: return True and DO NOT add this utterance to history
+      - if not repeated: add to history
+    """
+    rep = [False] * len(normalized_utts)
+    prev_embs = []  # list[tensor]
+
+    # batch encode for speed (still same model)
+    embs = analyzer.embedder.encode(
+        normalized_utts,
+        convert_to_tensor=True,
+        normalize_embeddings=True
+    )
+
+    for i, (emb, m) in enumerate(zip(embs, is_match)):
         if not m:
-            rep.append(False)
+            rep[i] = False
             continue
-        if cid in seen:
-            rep.append(True)
-        else:
-            seen.add(cid)
-            rep.append(False)
+
+        if prev_embs:
+            prev_mat = torch.stack(prev_embs)   # shape: (n_prev, dim)
+            sims = util.cos_sim(emb.unsqueeze(0), prev_mat)
+            max_sim = float(sims.max().item())
+            if max_sim > sim_thr:
+                rep[i] = True
+                # IMPORTANT: do NOT append emb (matches old code)
+                continue
+
+        # not repeated → store
+        prev_embs.append(emb)
+        rep[i] = False
+
     return rep
 
-def compute_topic_switch_flags(analyzer: MainConceptAnalyzerNormalize, utterances: list[str]) -> list[bool]:
+def compute_topic_switch_flags(
+    analyzer: MainConceptAnalyzerNormalize,
+    utterances: list[str],
+) -> list[bool]:
+    """
+    Matches old pipeline: analyzer.is_topic_switching(prev, curr)
+    """
     flags = [False] * len(utterances)
     for i in range(1, len(utterances)):
         flags[i] = bool(analyzer.is_topic_switching(utterances[i-1], utterances[i]))
@@ -69,6 +111,7 @@ def compute_topic_switch_flags(analyzer: MainConceptAnalyzerNormalize, utterance
 def build_participant_row(dfp: pd.DataFrame, cutoff: float, analyzer: MainConceptAnalyzerNormalize) -> dict:
     dfp = dfp.sort_values("utt_idx").reset_index(drop=True)
     utts = dfp["utterance"].astype(str).tolist()
+    norm_utts = dfp["normalized_utt"].astype(str).tolist()
     dists = dfp["distance_to_centroid"].astype(float).tolist()
     best_idx = dfp["best_idx"].astype(int).tolist()
 
@@ -80,7 +123,12 @@ def build_participant_row(dfp: pd.DataFrame, cutoff: float, analyzer: MainConcep
     matched_concepts = [concepts[i] if m else None for i, m in zip(best_idx, is_match)]
 
     # repeated only among matched (mirrors your coherence logic)
-    repeated_flags = compute_repeated_flags(best_idx, is_match)
+    repeated_flags = compute_repeated_flags(
+        analyzer=analyzer,
+        normalized_utts=norm_utts,
+        is_match=is_match,
+        sim_thr=0.8,   # EXACT old threshold
+    )
 
     # topic switching within participant
     topic_switch_flags = compute_topic_switch_flags(analyzer, utts)
@@ -209,3 +257,129 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# =========================
+# MAIN
+# # =========================
+# def main():
+
+#     if not PARQUET_PATH.exists():
+#         raise FileNotFoundError(PARQUET_PATH)
+
+#     df = pd.read_parquet(PARQUET_PATH)
+
+#     needed = [
+#         "participant",
+#         "label",
+#         "utt_idx",
+#         "utterance",
+#         "normalized_utt",
+#         "distance_to_centroid",
+#         "best_idx",
+#     ]
+
+#     for c in needed:
+#         if c not in df.columns:
+#             raise ValueError(f"Missing column: {c}")
+
+#     df = df.sort_values("utt_idx").reset_index(drop=True)
+
+#     utts = df["utterance"].astype(str).tolist()
+#     norm_utts = df["normalized_utt"].astype(str).tolist()
+#     dists = df["distance_to_centroid"].astype(float).tolist()
+
+#     best_idx = (
+#         pd.to_numeric(df["best_idx"], errors="coerce")
+#         .astype("Int64")
+#         .tolist()
+#     )
+
+#     analyzer = MainConceptAnalyzerNormalize(global_cutoff=0.0)
+
+#     # -----------------------
+#     # Match logic
+#     # -----------------------
+#     is_match = [d <= CUTOFF for d in dists]
+
+#     # -----------------------
+#     # Matched concepts
+#     # -----------------------
+#     concepts = analyzer.concepts
+
+#     matched_concepts = []
+
+#     for b, m in zip(best_idx, is_match):
+
+#         if m and b is not None and not pd.isna(b):
+#             matched_concepts.append(concepts[int(b)])
+#         else:
+#             matched_concepts.append(None)
+
+#     # -----------------------
+#     # Old-style signals
+#     # -----------------------
+#     repeated_flags = compute_repeated_flags(
+#         analyzer,
+#         norm_utts,
+#         is_match,
+#         SIM_THR
+#     )
+
+#     topic_switch_flags = compute_topic_switch_flags(
+#         analyzer,
+#         utts
+#     )
+
+#     # -----------------------
+#     # Coherence classification
+#     # -----------------------
+#     counts, utt_errors = count_errors_fold_one_participant(
+#         utterances=utts,
+#         is_mainconcept_match=is_match,
+#         matched_concepts=matched_concepts,
+#         is_repeated_flags=repeated_flags,
+#         topic_switch_flags=topic_switch_flags,
+#     )
+
+#     total = len(utts)
+
+#     local_pct, global_pct = calculate_coherence_error_percentages(
+#         counts,
+#         total
+#     )
+
+#     # ======================
+#     # PRINT SUMMARY
+#     # ======================
+#     print("\n==============================")
+#     print(" COHERENCE ERROR SUMMARY")
+#     print("==============================")
+
+#     print("Parquet :", PARQUET_PATH.name)
+#     print("Participant:", df["participant"].iloc[0])
+#     print("Label:", df["label"].iloc[0])
+
+#     print("Cutoff:", CUTOFF)
+#     print("SimThr:", SIM_THR)
+
+#     print("Total utterances:", total)
+#     print("MC matches:", sum(is_match))
+
+#     print(f"Local % : {local_pct:.2f}")
+#     print(f"Global %: {global_pct:.2f}")
+
+#     print("\n--- RAW COUNTS ---")
+
+#     for et in ERROR_TYPES:
+#         print(f"{et:25s} {counts.get(et,0)}")
+
+#     print("\n--- PERCENTAGES ---")
+
+#     for et in ERROR_TYPES:
+#         n = counts.get(et, 0)
+#         pct = (n / total * 100) if total else 0
+#         print(f"{et:25s} {pct:6.2f}%")
+
+
+# if __name__ == "__main__":
+#     main()

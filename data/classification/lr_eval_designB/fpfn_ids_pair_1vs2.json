@@ -4,7 +4,6 @@
     "pair":"Aphasia vs Dementia",
     "false_negatives_true_pos_pred_neg":[
       "15-1",
-      "20-1",
       "BMN3031b",
       "Baycrest12814",
       "DCR7644a",
@@ -21,8 +20,7 @@
       "acwt12a",
       "elman05a",
       "fridriksson07a",
-      "richardson27a",
-      "whiteside19a",
+      "scale22a",
       "williamson13a"
     ]
   },
@@ -30,19 +28,18 @@
     "fold":1,
     "pair":"Aphasia vs Dementia",
     "false_negatives_true_pos_pred_neg":[
-      "06-1",
+      "53-1",
       "95-1",
+      "Baycrest11976",
       "DRY8487a",
       "JKS7696a",
       "LRW4117a",
-      "MVS4058a"
+      "MVS4058a",
+      "RWN7022a"
     ],
     "false_positives_true_neg_pred_pos":[
-      "TAP11a",
       "fridriksson13a",
       "richardson20a",
-      "whiteside14a",
-      "whiteside20a",
       "wozniak04a"
     ]
   },
@@ -57,21 +54,15 @@
       "PON4669b"
     ],
     "false_positives_true_neg_pred_pos":[
-      "Baycrest12072a",
-      "MMA14a",
       "acwt04a",
-      "adler03a",
-      "fridriksson01a",
-      "whiteside18a",
-      "williamson09a",
-      "wozniak01a"
+      "richardson26a",
+      "whiteside18a"
     ]
   },
   {
     "fold":3,
     "pair":"Aphasia vs Dementia",
     "false_negatives_true_pos_pred_neg":[
-      "Baycrest11634",
       "Baycrest12829",
       "EMH9057a",
       "HWN0674a"
@@ -80,26 +71,28 @@
       "Baycrest12331a",
       "Baycrest9772a",
       "MMA11a",
+      "UNH01a",
       "UNH11b",
       "adler04a",
       "richardson08a",
       "richardson31a",
       "whiteside17a",
-      "williamson11a"
+      "wright202a"
     ]
   },
   {
     "fold":4,
     "pair":"Aphasia vs Dementia",
     "false_negatives_true_pos_pred_neg":[
-      "71-1",
       "BDY3628a",
+      "Baycrest12257",
       "Baycrest13188",
       "MSH7922a"
     ],
     "false_positives_true_neg_pred_pos":[
       "Baycrest10827a",
       "MMA12a",
+      "fridriksson05a",
       "fridriksson11a",
       "richardson21a",
       "williamson10a"
