@@ -1,5 +1,5 @@
 import re
-from features import get_stanza_pipeline
+from src.features import get_stanza_pipeline
 # from preprocessing import clean_text
 # from features import get_stanza_pipeline
 # from nouns_verbs_per_utterance import calculate_nouns_per_utterance, calculate_verbs_per_utterance

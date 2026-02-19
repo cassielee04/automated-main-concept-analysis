@@ -1,4 +1,4 @@
-participant,utterance,Ground Truth Matching? ,predicted matching
+participant,utterance,Ground Truth Matching?,predicted matching
 williamson10a,"and she has a, uh, a thing.",False,True
 williamson10a,"Uh, uh, uh, so she walks up.",False,True
 williamson05a,And tell me the story.,False,True
@@ -30,15 +30,15 @@ adler05a,"Um, with cartons were the horses were the.",False,True
 adler05a,"And would get them to go,.",False,True
 adler05a,"but he was told he had to be home by 11 o'clock, by 12 o'clock.",False,True
 adler05a,"And um he, he gets a beautiful gown.",False,True
-adler05a,"She's everything, beautiful.",True,False
 adler05a,"And then He goes to the president and she, he, he, the chief.",False,True
+adler05a,"Uh, he brings her,.",False,True
 adler05a,He looked beautiful.,False,True
+adler05a,And then she noticed.,False,True
 adler05a,"that the crown, uh, was leaving.",False,True
 adler05a,or maybe it was ran down.,True,False
 adler05a,"or the other, they, he left a class sheet.",False,True
 adler05a,She's leaving the gown.,False,True
 adler05a,"And she, um, she lives, uh, uh, uh, uh, uh, she left one of her old blisters, her glass.",False,True
-adler05a,She was leaving.,True,False
 adler05a,Ah bless and they were special.,False,True
 adler05a,"Uh, classroom.",False,True
 adler05a,that they left.,False,True
@@ -68,6 +68,7 @@ acwt12a,that had that he was a a servant of the uh the film and uh.,False,True
 acwt12a,"that Head, he's going to have a ball.",True,False
 acwt12a,"and he, they, what he want everybody got want to go.",False,True
 acwt12a,and get their clothes.,False,True
+acwt12a,"They're, they're, they're, um.",False,True
 acwt12a,"and had they uh say um they he said he was uh Sandoranno wasn't able to go, so he was out out with the uh outside with the animals outside and she was he wasn't she wasn't happy at all and they uh very, very, very.",False,True
 acwt12a,"Fay, no,.",False,True
 acwt12a,"that 's right, furry flower man, a lady came and ,.",False,True
@@ -75,24 +76,26 @@ acwt12a,"and they, uh, everybody was going to be, uh, uh, naked to, uh.",False,T
 acwt12a,"and , uh, she, she was told him, her them the, the.",False,True
 acwt12a,He would tie tie the shoe on.,False,True
 acwt12a,and he go they went away.,False,True
+whiteside01a,and she has.,False,True
 whiteside01a,"The woman there was the hired, who hired her hired her, and two girls were behind her.",False,True
 whiteside01a,that went with her.,False,True
 whiteside01a,"And she met that guy, the good looking young man.",False,True
-whiteside01a,"that he liked,.",True,False
 wozniak04a,What was in there?,False,True
 wozniak04a,Cinderella was brought to this factory.,False,True
 wozniak04a,"and , uh, She was put to one side.",False,True
 wozniak04a,"She was supposed to be the Cinderella,.",False,True
 wozniak04a,"and they all had a thing,.",False,True
 wozniak04a,"and Then they come,.",False,True
-wozniak04a,And found her.,True,False
 williamson07a,A man and a woman.,True,False
+williamson07a,The So.,False,True
 williamson07a,"Everyone would come with a woman, with a woman,.",False,True
 williamson07a,"and they would The The old, older man will Make A allow a man would Cover everything.",False,True
 williamson07a,To his son.,False,True
 williamson07a,"But When they took, took the, Everybody got, everyone got all set up.",False,True
 williamson07a,"They were, the, the, They, they, when I say they, I mean the girls.",False,True
+williamson07a,"Um, she.",False,True
 williamson07a,"She, they look upon her.",False,True
+williamson07a,Her.,False,True
 williamson07a,"as they go to the, go onto the Fair fairground, fair, fair.",False,True
 williamson07a,Left And down all she down we.,False,True
 williamson07a,"that day, she goes with the, Pets.",False,True
@@ -110,10 +113,10 @@ williamson07a,Out of the.,False,True
 williamson07a,Down she got down.,False,True
 williamson07a,and she went up the stairs to.,False,True
 williamson07a,The window to celebrate.,False,True
-williamson07a,Overwhelmed by her.,True,False
 williamson07a,It only works until 12 o'clock.,True,False
 williamson07a,"And She almost, she.",False,True
 williamson07a,She Help.,False,True
+williamson07a,Something wrong.,False,True
 williamson07a,"But she falls, the false.",False,True
 williamson07a,"Once, when the, The hospital, uh, uh, He goes, she goes.",False,True
 williamson07a,"So Later, the, the sun, the son, he gets the, the.",False,True
@@ -146,9 +149,9 @@ wozniak06a,"I can't remember now,.",False,True
 wozniak06a,"and I can't tell from that what, where she is.",False,True
 wozniak06a,"So , um, She went to the wall.",False,True
 wozniak06a,"Uh, came and , um.",False,True
+wozniak06a,so she was uh.,False,True
 wozniak06a,I don't remember that was there or not.,False,True
 wozniak06a,"I can't remember how she was forced to leave,.",False,True
-wozniak06a,"but she was,.",True,False
 wozniak06a,So very quickly.,True,False
 wright203a,but all of a sudden she died.,False,True
 wright203a,She's not gonna do anything like that.,False,True
@@ -166,13 +169,9 @@ Baycrest12331a,"And so, uh, I'm trying to think of who, um, how.",False,True
 244-1,cause really we need him to get married.,True,False
 244-1,"if you get all your work done, you can go, knowing full well.",True,False
 244-1,that would make it.,True,False
-244-1,Anastasia.,True,False
-244-1,And Anastasia.,True,False
 244-1,Make her.,False,True
 244-1,Salaadula Mgabula bibbity bodi boo.,True,False
-244-1,Put them together?,True,False
 244-1,and what have you got?,True,False
-244-1,ibbity bo boo.,True,False
 244-1,There's more.,False,True
 244-1,while she's doing.,False,True
 244-1,that can you imagine are made of glass?,True,False
@@ -183,11 +182,9 @@ Baycrest12331a,"And so, uh, I'm trying to think of who, um, how.",False,True
 244-1,and they still don't fit.,True,False
 244-1,This is a long story.,False,True
 46-1,So They should have made it.,False,True
-46-1,So she's leaving.,True,False
 46-1,and takes it.,False,True
 276-1,"but it, uh, when he gets a second chance.",True,False
 276-1,and get put out.,False,True
-101-1,"Sadly, he dies.",True,False
 101-1,So they send invitations out throughout the land.,True,False
 101-1,"but she's, she has a lot of friends in the, um, animal world,.",True,False
 101-1,before everything changes back.,True,False
@@ -203,17 +200,59 @@ Baycrest12331a,"And so, uh, I'm trying to think of who, um, how.",False,True
 36-1,and mean.,True,False
 36-1,"I will give you, grant you grant you some wishes,.",True,False
 36-1,"and she does just that , so.",False,True
-36-1,"Uh, is instantly attracted.",True,False
 36-1,as they're leaving.,False,True
+36-1,that they ask.,False,True
 92-1,All right.,True,False
-92-1,Beautiful gala and um.,True,False
 92-1,"and with the this part, the, the, the pictures kind of went through,.",False,True
 92-1,That was a couple minutes to 12.,True,False
 92-1,"but she, he insisted,.",False,True
-92-1,Happily ever after.,True,False
 98-1,It was a bad relationship from the beginning.,True,False
 98-1,that she would even think.,False,True
 98-1,about going.,False,True
 98-1,The only rule is.,True,False
 98-1,"that He said, they say he will go around to all the women in the In the land,.",True,False
 98-1,and he will try on.,True,False
+20-2,"OK, anyway, she, um.",False,True
+20-2,that's a quick synopsis.,False,True
+53-2,"and thought, you know, that was the end of it.",False,True
+Baycrest13188,"Um, to the, um.",False,True
+Baycrest13188,The uh cos of the old.,False,True
+Baycrest13188,That send it right on um um.,False,True
+Baycrest13188,"Um The, um, 2 run, um, so from the uh.",False,True
+Baycrest13188,"Um, He chopped down the ss um the Um Um Um Uh, the, um.",False,True
+Baycrest13188,"The uh Uh, they go.",False,True
+Baycrest13188,and swim out they go back to the house.,False,True
+Baycrest13188,And their prints.,False,True
+Baycrest13188,"Um, And so um.",False,True
+Baycrest13074,Scrub the floors and all the menial task.,True,False
+Baycrest12756,um uh woman and the um her.,False,True
+Baycrest12756,"Well, there comes a little.",False,True
+Baycrest12756,"Um, into a, um.",False,True
+Baycrest12756,"Yeah, there is a um.",False,True
+Baycrest12756,"And then they went go out to forever, forever.",False,True
+10-1,Somebody saw her.,False,True
+14-2,"Um, they're introduced the Man.",False,True
+14-2,and everybody's excited.,True,False
+14-2,And is planning to go.,True,False
+14-2,and they punch her.,False,True
+14-1,Came.,False,True
+14-1,"like it was,.",False,True
+14-1,and He finally found.,False,True
+Baycrest11634,and just wanted to um.,False,True
+Baycrest11634,Be with her.,True,False
+Baycrest11634,"Um, stuff.",False,True
+Baycrest11634,"that you, you were wearing originally.",False,True
+Baycrest11634,So just before midnight.,True,False
+Baycrest11634,To see her.,False,True
+Baycrest11634,because she knew.,False,True
+Baycrest11634,Huddle cabin where she was.,False,True
+Baycrest11634,And try wishing to find the person.,True,False
+Baycrest11634,And um He went.,False,True
+Baycrest11634,that there is somebody else here.,False,True
+15-1,"As I recall, um,.",False,True
+15-1,If the story starts with.,False,True
+15-1,about going to.,False,True
+50-1,"Um, I, I'm, I'll make her do it,.",False,True
+50-1,and goes to the um.,False,True
+61-1,The I forget which animal.,False,True
+61-1,So they all got in line.,False,True

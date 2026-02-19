@@ -1,16 +1,16 @@
 import spacy
 
 nlp = spacy.load("en_core_web_sm")
-from fillers import contains_filler
-from pauses_fillers import contains_empty_filler
+from src.fillers import contains_filler
+from src.pauses_fillers import contains_empty_filler
 # from mainconcept import get_mainconcept_match, is_topic_switching, is_repeated_mainconcept, find_average_similarity
 from collections import Counter
-from mainconcept_normalize import MainConceptAnalyzerNormalize
-from missing_ref_hardcoded import ReferentChecker
+from src.mainconcept_normalize import MainConceptAnalyzerNormalize
+from src.missing_ref_hardcoded import ReferentChecker
 import pandas as pd
-from normalize_utterances import normalize_utterances, normalize_utterance
-from segment_utterance import segment_utterances
-from preprocessing import clean_text
+from src.normalize_utterances import normalize_utterances, normalize_utterance
+from src.segment_utterance import segment_utterances
+from src.preprocessing import clean_text
 import re
 import os
 from glob import glob
@@ -83,7 +83,7 @@ def count_errors_fold_one_participant(
     return dict(error_counts), utterance_errors
 
 
-def is_incomplete_sentence(text):
+def is_incomplete_sentence(text): 
     """Detect incomplete sentences using POS tags and dependency parsing"""
     text = text.strip()
     if not text:
@@ -288,39 +288,39 @@ def extract_coherence_sanity_checks(csv_file_path) -> dict:
     return counts, result_df[['participant_code','Utterance', 'Error Type', 'Matched Concept']]
 
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
 
 
-#     # folder_path = os.path.abspath("../Data/transcripts/bank/dementia/aws/cinderella/test_set")
-#     # all_dfs = []
-#     # for idx, text_file in enumerate(glob(os.path.join(folder_path, "*_transcribed.json"))):
-#     #     base = os.path.splitext(os.path.basename(text_file))[0]
-#     #     participant_id = base.split('_')[0]
+    folder_path = os.path.abspath("../Data/transcripts/bank/dementia/aws/cinderella/test_set")
+    all_dfs = []
+    for idx, text_file in enumerate(glob(os.path.join(folder_path, "*_transcribed.json"))):
+        base = os.path.splitext(os.path.basename(text_file))[0]
+        participant_id = base.split('_')[0]
 
-#     #     json_path = f"../Data/transcripts/bank/dementia/aws/cinderella/{base}.json"
-#     #     print(f"🔍 Processing files for participant: {participant_id}")
-#     #     print(f"\n🚀 Processing Participant: {participant_id}")
-#     #     base = os.path.splitext(os.path.basename(json_path))[0]
-#     #     participant_id = base.split('_')[0]
+        json_path = f"../Data/transcripts/bank/dementia/aws/cinderella/{base}.json"
+        print(f"🔍 Processing files for participant: {participant_id}")
+        print(f"\n🚀 Processing Participant: {participant_id}")
+        base = os.path.splitext(os.path.basename(json_path))[0]
+        participant_id = base.split('_')[0]
 
-#     #     # Load and clean text
-#     #     text = load_text_from_aws_json(json_path)
-#     #     cleaned_text = clean_text(text)
-#     #     demo_utts = segment_utterances(cleaned_text)
+        # Load and clean text
+        text = load_text_from_aws_json(json_path)
+        cleaned_text = clean_text(text)
+        demo_utts = segment_utterances(cleaned_text)
 
-#     #     # Feature extraction
-#     #     df_features = pd.DataFrame([{}]) 
+        # Feature extraction
+        df_features = pd.DataFrame([{}]) 
 
-#     #     run_demo(demo_utts)
-#     # Example usage
-#     csv_file_path = "../data/coherence_controls_sample.csv"
-#     # csv_file_path = "tools/sample_coherence_check.csv"
+        run_demo(demo_utts)
+    # # Example usage
+    # csv_file_path = "../data/coherence_controls_sample.csv"
+    # # csv_file_path = "tools/sample_coherence_check.csv"
     
-#     # # Run the analysis
-#     counts, result_df = extract_coherence_sanity_checks(csv_file_path)
-#     print("Final Error Counts:", counts)
+    # # # Run the analysis
+    # counts, result_df = extract_coherence_sanity_checks(csv_file_path)
+    # print("Final Error Counts:", counts)
     
-#     # Optionally save the output to a new CSV file
-#     result_df.to_csv("../data/sanitycheck_coherence_controls_dementia.csv", index=False)
+    # # Optionally save the output to a new CSV file
+    # result_df.to_csv("../data/sanitycheck_coherence_controls_dementia.csv", index=False)
 
 

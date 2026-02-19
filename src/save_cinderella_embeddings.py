@@ -7,7 +7,7 @@ import pickle
 import csv
 from pathlib import Path
 import sys
-from normalize_utterances import normalize_utterances
+from src.normalize_utterances import normalize_utterances
 import pandas as pd
 from sentence_transformers.util import cos_sim
 

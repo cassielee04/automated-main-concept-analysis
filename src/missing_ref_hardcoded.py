@@ -1,6 +1,6 @@
 import re
 import spacy
-from features import get_stanza_pipeline
+from src.features import get_stanza_pipeline
 # Load spacy model for POS tagging
 # If you don't have spacy installed: pip install spacy
 # If you don't have the model: python -m spacy download en_core_web_sm

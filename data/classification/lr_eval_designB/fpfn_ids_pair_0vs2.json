@@ -8,13 +8,12 @@
     ],
     "false_positives_true_neg_pred_pos":[
       "delaware03-1",
-      "delaware12-1",
       "delaware203-1",
       "delaware227-1",
+      "delaware24-1",
       "delaware35-1",
       "delaware86-1",
       "neural17-1",
-      "neural26-1",
       "neural4-1",
       "wright07a"
     ]
@@ -23,18 +22,16 @@
     "fold":1,
     "pair":"Control vs Dementia",
     "false_negatives_true_pos_pred_neg":[
-      "06-1",
       "14-1",
-      "40-1",
       "61-1",
       "64-1",
       "79-1",
-      "Baycrest12828"
+      "Baycrest11976"
     ],
     "false_positives_true_neg_pred_pos":[
+      "delaware04-1",
       "delaware208-1",
-      "delaware65-1",
-      "neural40-1"
+      "delaware65-1"
     ]
   },
   {
@@ -43,18 +40,17 @@
     "false_negatives_true_pos_pred_neg":[
       "16-1",
       "21-1",
-      "26-1",
       "28-1",
       "43-1",
       "66-1",
-      "74-1",
-      "CHP4775a"
+      "74-1"
     ],
     "false_positives_true_neg_pred_pos":[
       "delaware07-1",
       "delaware221-1",
       "delaware30-1",
       "delaware46-1",
+      "delaware70-1",
       "neural62-1",
       "wright08a"
     ]
@@ -72,7 +68,9 @@
     ],
     "false_positives_true_neg_pred_pos":[
       "capilouto09a",
+      "capilouto13a",
       "delaware05-1",
+      "delaware233-1",
       "delaware270-1",
       "neural7-1",
       "wright06a",
@@ -88,7 +86,6 @@
       "232-1",
       "32-1",
       "49-1",
-      "58-1",
       "88-1",
       "Baycrest8538",
       "DUE3951a"
@@ -98,6 +95,9 @@
       "delaware02-1",
       "delaware229-1",
       "delaware271-1",
+      "delaware93-1",
+      "delaware97-1",
+      "neural29-1",
       "wright04a"
     ]
   }

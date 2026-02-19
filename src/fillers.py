@@ -1,7 +1,7 @@
 # import stanza
 from collections import Counter
 import re
-from features import get_stanza_pipeline 
+from src.features import get_stanza_pipeline 
 
 # Download and initialize the English model (run once)
 # stanza.download('en')

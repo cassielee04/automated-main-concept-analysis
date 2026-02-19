@@ -5,20 +5,22 @@
     "false_negatives_true_pos_pred_neg":[
       "Baycrest11154a",
       "UNH14a",
-      "fridriksson07a"
+      "fridriksson07a",
+      "williamson07a"
     ],
     "false_positives_true_neg_pred_pos":[
       "delaware03-1",
       "delaware203-1",
       "delaware227-1",
-      "delaware86-1"
+      "delaware86-1",
+      "neural4-1"
     ]
   },
   {
     "fold":1,
     "pair":"Control vs Aphasia",
     "false_negatives_true_pos_pred_neg":[
-      "richardson20a"
+
     ],
     "false_positives_true_neg_pred_pos":[
       "delaware208-1",
@@ -29,13 +31,15 @@
     "fold":2,
     "pair":"Control vs Aphasia",
     "false_negatives_true_pos_pred_neg":[
-      "whiteside18a",
-      "wright203a"
+
     ],
     "false_positives_true_neg_pred_pos":[
       "delaware07-1",
+      "delaware221-1",
       "delaware30-1",
-      "delaware46-1"
+      "delaware46-1",
+      "neural62-1",
+      "wright08a"
     ]
   },
   {
@@ -46,12 +50,12 @@
       "Baycrest9772a",
       "UNH11b",
       "richardson08a",
-      "wright202a"
+      "richardson31a"
     ],
     "false_positives_true_neg_pred_pos":[
-      "capilouto09a",
       "delaware05-1",
       "delaware270-1",
+      "neural39-1",
       "wright06a",
       "wright09a"
     ]
@@ -62,11 +66,11 @@
     "false_negatives_true_pos_pred_neg":[
       "Baycrest10827a",
       "fridriksson11a",
-      "richardson21a",
       "williamson10a"
     ],
     "false_positives_true_neg_pred_pos":[
       "delaware271-1",
+      "delaware97-1",
       "wright04a"
     ]
   }

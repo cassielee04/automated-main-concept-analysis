@@ -1,0 +1,11 @@
+feature,feature_pretty,coef_mean,abs_coef_mean,rank_abs
+unique_main_concept_match_ratio,Unique MC Match Ratio,-1.3709993526725524,1.3709993526725524,1
+distance_to_centroid,Distance to Centroid,0.8487086912275904,0.8487086912275904,2
+ratio_filler_percent,Filler Error Rate,0.24661382599978116,0.24661382599978116,3
+ratio_propositional_repetition_percent,Propositional Repetition Error Rate,0.15094164854381317,0.15094164854381317,4
+ratio_coherent_percent,Coherent Utterance Rate,0.09571247231077831,0.09571247231077831,5
+local_coherence_mainconcept,Local Coherence Error Rate,-0.08638600786136064,0.08638600786136064,6
+ratio_topic_switching_percent,Topic Switching Error Rate,0.08426897543116438,0.08426897543116438,7
+ratio_tangential_utterance_percent,Tangential Utterance Error Rate,0.05187555183782684,0.05187555183782684,8
+global_coherence_mainconcept,Global Coherence Error Rate,-0.029019695839551163,0.029019695839551163,9
+sequence_score_mainconcept,Sequence Score,0.0001971501421702382,0.0001971501421702382,10
