@@ -1,0 +1,7 @@
+scenario,class,correct,total,recall
+Full heterogeneous sample,Control,83,113,0.7345132743362832
+Full heterogeneous sample,Aphasia,70,102,0.6862745098039216
+Full heterogeneous sample,Dementia,34,94,0.3617021276595745
+Restricted sample,Control,73,113,0.6460176991150443
+Restricted sample,Aphasia,73,86,0.8488372093023255
+Restricted sample,Dementia,29,60,0.48333333333333334
